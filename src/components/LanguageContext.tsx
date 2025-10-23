@@ -91,7 +91,60 @@ const translations = {
     'services.maintenance.feature2': 'Emergency repairs',
     'services.maintenance.feature3': 'Commissioning tests',
     'services.maintenance.feature4': 'On-time commitment',
+    "services.back": 'Back to Services',
     
+    //services.details
+    'services.details.construction.title': 'Construction ',
+    'services.details.construction.desc': "A core pillar since inception with cross-discipline integration between electrical and mechanical teams to reduce clashes, accelerate delivery, and assure quality.",
+    'services.details.construction.feature1':"Cross-discipline integration between teams",
+    'services.details.construction.feature2': "Clash reduction & coordination",
+    'services.details.construction.feature3':"Accelerated project delivery",
+    'services.details.construction.feature4':"Top-quality assurance",
+    
+
+
+    'services.details.electrical.title': 'Electrical Works ',
+    'services.details.electrical.desc': "Main and sub cabling, underground/in-wall/ceiling installations, lighting and power systems, earthing, safety, and integration with mechanical systems.",
+    'services.details.electrical.feature1':"Main & sub cabling systems",
+    'services.details.electrical.feature2':"Lighting and power infrastructure",
+    'services.details.electrical.feature3':"Safety & grounding systems",
+    'services.details.electrical.feature4':"Integration with mechanical works",
+
+
+
+    'services.details.plumbing.title': 'Plumbing Works ',
+    'services.details.plumbing.desc': "Potable water and drainage networks, ventilation and rain discharge, sanitary fixtures, and close coordination with electrical and HVAC for system integrity.",
+    'services.details.plumbing.feature1':"Water supply & drainage networks",
+    'services.details.plumbing.feature2':"Ventilation and rain discharge",
+    'services.details.plumbing.feature3':"Sanitary installations",
+    'services.details.plumbing.feature4':"HVAC and electrical coordination",
+    
+
+
+    'services.details.fire.title': 'Fire & Early Warning Systems ',
+    'services.details.fire.desc': "Integrated safety solutions including suppression and alarm systems applying NFPA and Saudi codes with Civil Defense integration.",
+    'services.details.fire.feature1':"Fire suppression systems",
+    'services.details.fire.feature2':"Alarm panels & detectors",
+    'services.details.fire.feature3':"NFPA & Saudi standards",
+    'services.details.fire.feature4':"Civil Defense integration",
+
+
+    'services.details.finishes.title': 'Plastering & Finishes ',
+    'services.details.finishes.desc': "From cement plastering to final finishing — paints, ceramics, gypsum, windows, insulation, and landscaping — done with precision and durability.",
+    'services.details.finishes.feature1': "Cement plastering & alignment",
+    'services.details.finishes.feature2':"Interior & exterior finishes",
+    'services.details.finishes.feature3':"Paints, ceramics, gypsum works",
+    'services.details.finishes.feature4':"Windows, insulation, landscaping",
+    
+
+    'services.details.maintenance.title': 'Support & Maintenance ',
+    'services.details.maintenance.desc': "Technical support, preventive maintenance, and emergency repairs — ensuring continued functionality and client satisfaction.",
+    'services.details.maintenance.feature1': "Preventive maintenance",
+    'services.details.maintenance.feature2':"Emergency repair response",
+    'services.details.maintenance.feature3':"Scheduled servicing",
+    'services.details.maintenance.feature4':"Post-delivery technical support",
+
+
     // Projects
     "projects.badge": "Our Projects",
     "projects.title": "Showcasing Our Finest Work",
@@ -260,7 +313,51 @@ const translations = {
     'services.maintenance.feature2': 'إصلاحات طارئة',
     'services.maintenance.feature3': 'اختبارات تشغيل',
     'services.maintenance.feature4': 'التزام بالمواعيد',
+    "services.back": 'العودة إلى الخدمات',
     
+    //services.details
+    'services.details.construction.title': 'إنشاءات',
+    'services.details.construction.desc': "ركيزة أساسية منذ البداية مع التكامل متعدد التخصصات بين الفرق الكهربائية والميكانيكية لتقليل الاشتباكات وتسريع التسليم وضمان الجودة.",
+    'services.details.construction.feature1':"التكامل متعدد التخصصات بين الفرق",
+    'services.details.construction.feature2': "تقليل الصدام والتنسيق",
+    'services.details.construction.feature3':"تسريع تسليم المشروع",
+    'services.details.construction.feature4':"ضمان الجودة العالية",
+
+    'services.details.electrical.title': 'الأعمال الكهربائية',
+    'services.details.electrical.desc': "الكابلات الرئيسية والفرعية، والتركيبات تحت الأرض/داخل الحائط/السقف، وأنظمة الإضاءة والطاقة، والتأريض، والسلامة، والتكامل مع الأنظمة الميكانيكية.",
+    'services.details.electrical.feature1':"أنظمة الكابلات الرئيسية والفرعية",
+    'services.details.electrical.feature2':"البنية التحتية للإضاءة والطاقة",
+    'services.details.electrical.feature3':"أنظمة الأمان والتأريض",
+    'services.details.electrical.feature4':"التكامل مع الأعمال الميكانيكية",
+
+    'services.details.plumbing.title': 'أعمال السباكة',
+    'services.details.plumbing.desc': "شبكات مياه الشرب والصرف الصحي، والتهوية وتصريف الأمطار، والتجهيزات الصحية، والتنسيق الوثيق مع الكهرباء وأنظمة التدفئة والتهوية وتكييف الهواء لضمان سلامة النظام.",
+    'services.details.plumbing.feature1':"شبكات إمدادات المياه والصرف الصحي",
+    'services.details.plumbing.feature2':"التهوية وتصريف الأمطار",
+    'services.details.plumbing.feature3':"تركيبات صحية",
+    'services.details.plumbing.feature4':"تنسيق التدفئة والتهوية وتكييف الهواء والكهرباء",
+
+    'services.details.fire.title': 'أنظمة الحرائق والإنذار المبكر',
+    'services.details.fire.desc': "حلول السلامة المتكاملة بما في ذلك أنظمة القمع والإنذار التي تطبق معايير NFPA والكود السعودي مع تكامل الدفاع المدني.",
+    'services.details.fire.feature1':"أنظمة إخماد الحرائق",
+    'services.details.fire.feature2':"لوحات الإنذار وأجهزة الكشف",
+    'services.details.fire.feature3':"NFPA والمعايير السعودية",
+    'services.details.fire.feature4':"تكامل الدفاع المدني",
+
+    'services.details.finishes.title': 'اللياسة والتشطيبات',
+    'services.details.finishes.desc': "من التجصيص الأسمنتي إلى التشطيب النهائي - الدهانات والسيراميك والجبس والنوافذ والعزل وتنسيق الحدائق - يتم ذلك بدقة ومتانة.",
+    'services.details.finishes.feature1': "اللياسة والمحاذاة الأسمنتية",
+    'services.details.finishes.feature2':"تشطيبات داخلية وخارجية",
+    'services.details.finishes.feature3':"دهانات، سيراميك، أعمال جبس",
+    'services.details.finishes.feature4':"نوافذ، عزل، تنسيق حدائق",
+
+    'services.details.maintenance.title': 'الدعم والصيانة',
+    'services.details.maintenance.desc': "الدعم الفني والصيانة الوقائية والإصلاحات الطارئة - ضمان استمرار الأداء الوظيفي ورضا العملاء.",
+    'services.details.maintenance.feature1': "الصيانة الوقائية",
+    'services.details.maintenance.feature2':"الاستجابة للإصلاح في حالات الطوارئ",
+    'services.details.maintenance.feature3':"الخدمة المجدولة",
+    'services.details.maintenance.feature4':"الدعم الفني بعد التسليم",
+
     // Projects
     "projects.badge": "مشاريعنا",
     "projects.title": "عرض أفضل أعمالنا",

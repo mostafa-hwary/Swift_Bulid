@@ -1,9 +1,12 @@
 import { useParams, useNavigate } from "react-router-dom";
-//import { Card, CardHeader, CardContent, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
-//import { useLanguage } from "../LanguageContext";
 import { Home, Building, Warehouse, Wrench, PaintBucket, Hammer } from "lucide-react";
+import { useLanguage } from "../LanguageContext"; // ✅ نضيف دي
+import { useEffect } from "react"; // ✅ علشان scroll to top
 
+
+
+// الصور
 import constructionImg from "./images/Construction.jpg";
 import electricalImg from "./images/Electrical Works.jpg";
 import plumbingImg from "./images/Plumbing Works.jpg";
@@ -11,81 +14,88 @@ import fireImg from "./images/Fire & Early Warning Systems.jpg";
 import plasteringImg from "./images/Plastering & Finishes.jpg";
 import maintenanceImg from "./images/Support & Maintenance.jpg";
 
-
-
 export default function ServicesDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { t, language } = useLanguage();
+
+  const isArabic = language === "ar";
 
   const details = [
     {
-      title: "Construction",
-      desc: "A core pillar since inception with cross-discipline integration between electrical and mechanical teams to reduce clashes, accelerate delivery, and assure quality.",
+      id:1,
+      title: t("services.details.construction.title"),
+      desc: t("services.details.construction.desc"),
       features: [
-        "Cross-discipline integration between teams",
-        "Clash reduction & coordination",
-        "Accelerated project delivery",
-        "Top-quality assurance",
+        t('services.details.construction.feature1'),
+        t('services.details.construction.feature2'),
+        t('services.details.construction.feature3'),
+        t('services.details.construction.feature4'),
       ],
       icon: Home,
       image: constructionImg,
     },
     {
-      title: "Electrical Works",
-      desc: "Main and sub cabling, underground/in-wall/ceiling installations, lighting and power systems, earthing, safety, and integration with mechanical systems.",
+      id:2,
+      title: t("services.details.electrical.title"),
+      desc: t("services.details.electrical.desc"),
       features: [
-        "Main & sub cabling systems",
-        "Lighting and power infrastructure",
-        "Safety & grounding systems",
-        "Integration with mechanical works",
+        t('services.details.electrical.feature1'),
+        t('services.details.electrical.feature2'),
+        t('services.details.electrical.feature3'),
+        t('services.details.electrical.feature4'),
       ],
       icon: Building,
       image: electricalImg,
     },
     {
-      title: "Plumbing Works",
-      desc: "Potable water and drainage networks, ventilation and rain discharge, sanitary fixtures, and close coordination with electrical and HVAC for system integrity.",
+      id:3,
+      title: t("services.details.plumbing.title"),
+      desc: t("services.details.plumbing.desc"),
       features: [
-        "Water supply & drainage networks",
-        "Ventilation and rain discharge",
-        "Sanitary installations",
-        "HVAC and electrical coordination",
+        t('services.details.plumbing.feature1'),
+        t('services.details.plumbing.feature2'),
+        t('services.details.plumbing.feature3'),
+        t('services.details.plumbing.feature4'),
       ],
       icon: Warehouse,
       image: plumbingImg,
     },
     {
-      title: "Fire & Early Warning Systems",
-      desc: "Integrated safety solutions including suppression and alarm systems applying NFPA and Saudi codes with Civil Defense integration.",
+      id:4,
+      title: t("services.details.fire.title"),
+      desc: t("services.details.fire.desc"),
       features: [
-        "Fire suppression systems",
-        "Alarm panels & detectors",
-        "NFPA & Saudi standards",
-        "Civil Defense integration",
+        t('services.details.fire.feature1'),
+        t('services.details.fire.feature2'),
+        t('services.details.fire.feature3'),
+        t('services.details.fire.feature4'),
       ],
       icon: Wrench,
       image: fireImg,
     },
     {
-      title: "Plastering & Finishes",
-      desc: "From cement plastering to final finishing — paints, ceramics, gypsum, windows, insulation, and landscaping — done with precision and durability.",
+      id:5,
+      title: t("services.details.finishes.title"),
+      desc: t("services.details.finishes.desc"),
       features: [
-        "Cement plastering & alignment",
-        "Interior & exterior finishes",
-        "Paints, ceramics, gypsum works",
-        "Windows, insulation, landscaping",
+        t('services.details.finishes.feature1'),
+        t('services.details.finishes.feature2'),
+        t('services.details.finishes.feature3'),
+        t('services.details.finishes.feature4'),
       ],
       icon: PaintBucket,
       image: plasteringImg,
     },
     {
-      title: "Support & Maintenance",
-      desc: "Technical support, preventive maintenance, and emergency repairs — ensuring continued functionality and client satisfaction.",
+      id:6,
+      title: t("services.details.maintenance.title"),
+      desc: t("services.details.maintenance.desc"),
       features: [
-        "Preventive maintenance",
-        "Emergency repair response",
-        "Scheduled servicing",
-        "Post-delivery technical support",
+        t('services.details.maintenance.feature1'),
+        t('services.details.maintenance.feature2'),
+        t('services.details.maintenance.feature3'),
+        t('services.details.maintenance.feature4'),
       ],
       icon: Hammer,
       image: maintenanceImg,
@@ -99,16 +109,16 @@ export default function ServicesDetails() {
   return (
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-8 sm:px-12 lg:px-20 xl:px-28">
-        <p
-          className="text-sm text-gray-500 mb-10 cursor-pointer hover:underline"
+        <Button
+          variant="outline"
+          className="bg-[#2527A9] text-white mb-12 hover:bg-[#1e1f8a] mb-10"
           onClick={() => navigate(-1)}
         >
-          ← Back to Services
-        </p>
 
-        {/* ⚙️ الصورة والنص جنب بعض */}
+          ← {t("services.back")}
+        </Button>
+
         <div className="flex flex-col lg:flex-row items-center gap-20 bg-white rounded-3xl shadow-2xl overflow-hidden">
-          {/* 🖼️ الصورة */}
           <div className="lg:w-1/2 w-full">
             <img
               src={service.image}
@@ -117,7 +127,6 @@ export default function ServicesDetails() {
             />
           </div>
 
-          {/* 💬 النص */}
           <div className="lg:w-1/2 w-full px-12 py-12">
             <div className="flex items-center gap-5 mb-8">
               <service.icon className="h-12 w-12 text-[#2527A9]" />
@@ -134,12 +143,6 @@ export default function ServicesDetails() {
               ))}
             </ul>
 
-            <Button
-              onClick={() => alert(`Request quote for ${service.title}`)}
-              className="bg-[#2527A9] hover:bg-[#1e1f8a] text-white px-10 py-5 text-lg rounded-full shadow-md"
-            >
-              Request a Quote
-            </Button>
           </div>
         </div>
       </div>

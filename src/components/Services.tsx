@@ -4,21 +4,22 @@ import { Button } from "./ui/button";
 import { 
   Home, Building, Warehouse, Wrench, PaintBucket, Hammer, ArrowRight 
 } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { useLanguage } from "./LanguageContext";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import "../index.css";
 
 export function Services() {
-  const { t, isRTL } = useLanguage();
-  const navigate = useNavigate();
+const { t, language, isRTL } = useLanguage();
 
   const services = [
-    { icon: Home, title: t("services.residential.title"), description: t("services.residential.desc") },
-    { icon: Building, title: t("services.commercial.title"), description: t("services.commercial.desc") },
-    { icon: Warehouse, title: t("services.industrial.title"), description: t("services.industrial.desc") },
-    { icon: Wrench, title: t("services.contracting.title"), description: t("services.contracting.desc") },
-    { icon: PaintBucket, title: t("services.interior.title"), description: t("services.interior.desc") },
-    { icon: Hammer, title: t("services.maintenance.title"), description: t("services.maintenance.desc") },
+    { id:1,icon: Home, title: t("services.residential.title"), description: t("services.residential.desc") },
+    { id:2,icon: Building, title: t("services.commercial.title"), description: t("services.commercial.desc") },
+    { id:3,icon: Warehouse, title: t("services.industrial.title"), description: t("services.industrial.desc") },
+    { id:4,icon: Wrench, title: t("services.contracting.title"), description: t("services.contracting.desc") },
+    { id:5,icon: PaintBucket, title: t("services.interior.title"), description: t("services.interior.desc") },
+    { id:6,icon: Hammer, title: t("services.maintenance.title"), description: t("services.maintenance.desc") },
   ];
 
   return (
@@ -48,24 +49,20 @@ export function Services() {
                   {service.description}
                 </p>
 
-                <Button
-                  variant="outline"
-                  className="w-full mt-auto py-2 border-[#2527A9] text-[#2527A9] hover:bg-[#2527A9] hover:text-white transition-all"
-                  onClick={() => navigate(`/services/${index + 1}`)}
-                >
-                  {t("services.learnMore")}
-                  <ArrowRight className={`h-4 w-4 ${isRTL ? "mr-2 rotate-180" : "ml-2"}`} />
-                </Button>
+                <Link to={`/${language}/services/${service.id}`}>
+                  <Button variant="outline" className="w-full font-medium">
+                    {t("services.viewDetails")}
+                    <ExternalLink
+                      className={`h-4 w-4 ${isRTL ? "mr-2" : "ml-2"} inline-block`}
+                    />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-24">
-          <Button size="lg" className="bg-[#2527A9] hover:bg-[#1e1f8a] text-white px-10 py-6 text-lg rounded-full shadow-md">
-            {t("services.getQuote")}
-          </Button>
-        </div>
+        
       </div>
     </section>
   );
