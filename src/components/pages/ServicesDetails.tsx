@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { Card, CardHeader, CardContent, CardTitle } from "../ui/card";
+//import { Card, CardHeader, CardContent, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
-import { useLanguage } from "../LanguageContext";
+//import { useLanguage } from "../LanguageContext";
 import { Home, Building, Warehouse, Wrench, PaintBucket, Hammer } from "lucide-react";
 
 import constructionImg from "./images/Construction.jpg";
@@ -16,7 +16,6 @@ import maintenanceImg from "./images/Support & Maintenance.jpg";
 export default function ServicesDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { t } = useLanguage();
 
   const details = [
     {

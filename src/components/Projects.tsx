@@ -4,97 +4,127 @@ import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useLanguage } from "./LanguageContext";
-import "../index.css"
+import { Link } from "react-router-dom";
+import "../index.css";
 
 export function Projects() {
-  const { t, isRTL } = useLanguage();
+const { t, language, isRTL } = useLanguage();
 
   const projects = [
     {
-      title: t('projects.luxury.title'),
+      id: 1,
+      title: t("projects.luxury.title"),
       category: "Residential",
-      description: t('projects.luxury.desc'),
-      image: "https://images.unsplash.com/photo-1672331713329-65c270686b71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBtb2Rlcm4lMjBidWlsZGluZyUyMGFyY2hpdGVjdHVyZXxlbnwxfHx8fDE3NTc5NzA3NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      status: t('projects.completed'),
-      year: "2024"
+      description: t("projects.luxury.desc"),
+      image:
+        "https://images.unsplash.com/photo-1672331713329-65c270686b71?auto=format&fit=crop&w=1080&q=80",
+      status: t("projects.completed"),
+      year: "2024",
     },
     {
-      title: t('projects.corporate.title'),
+      id: 2,
+      title: t("projects.corporate.title"),
       category: "Commercial",
-      description: t('projects.corporate.desc'),
-      image: "https://images.unsplash.com/photo-1748771886624-0f0aa2729a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb25zdHJ1Y3Rpb24lMjBidWlsZGluZyUyMHNpdGV8ZW58MXx8fHwxNzU3OTA0MTkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      status: t('projects.inProgress'),
-      year: "2024"
+      description: t("projects.corporate.desc"),
+      image:
+        "https://images.unsplash.com/photo-1748771886624-0f0aa2729a37?auto=format&fit=crop&w=1080&q=80",
+      status: t("projects.inProgress"),
+      year: "2024",
     },
     {
-      title: t('projects.manufacturing.title'),
+      id: 3,
+      title: t("projects.manufacturing.title"),
       category: "Industrial",
-      description: t('projects.manufacturing.desc'),
-      image: "https://images.unsplash.com/photo-1684497404598-6e844dff9cde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB0ZWFtJTIwd29ya2Vyc3xlbnwxfHx8fDE3NTc5MTM3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      status: t('projects.completed'),
-      year: "2023"
-    }
+      description: t("projects.manufacturing.desc"),
+      image:
+        "https://images.unsplash.com/photo-1684497404598-6e844dff9cde?auto=format&fit=crop&w=1080&q=80",
+      status: t("projects.completed"),
+      year: "2023",
+    },
   ];
 
   return (
     <section id="projects" className="py-24 bg-gray-50">
-      <div className="container px-8 lg:px-16">
-        <div className="text-center mb-20">
-          <Badge variant="secondary" className="mb-4">{t('projects.badge')}</Badge>
-          <h2 className="text-4xl font-bold mb-8">
-            {t('projects.title')}
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
-            {t('projects.subtitle')}
+      <div className="container px-6 lg:px-20">
+        <div className="text-center mb-16">
+          <Badge variant="secondary" className="mb-4">
+            {t("projects.badge")}
+          </Badge>
+          <h2 className="text-4xl font-bold mb-6">{t("projects.title")}</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            {t("projects.subtitle")}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-10 mb-16">
-          {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          {projects.map((project) => (
+            <Card
+              key={project.id}
+              className="overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 rounded-2xl"
+            >
+              <div className="relative w-full aspect-[4/3] overflow-hidden">
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
-                <div className={`absolute top-4 ${isRTL ? 'right-4' : 'left-4'}`}>
-                  <Badge 
-                    variant={project.status === t('projects.completed') ? "default" : "secondary"}
-                    className={project.status === t('projects.completed') ? "bg-green-600" : ""}
+                <div className={`absolute top-4 ${isRTL ? "right-4" : "left-4"}`}>
+                  <Badge
+                    variant={
+                      project.status === t("projects.completed")
+                        ? "default"
+                        : "secondary"
+                    }
+                    className={
+                      project.status === t("projects.completed")
+                        ? "bg-green-600"
+                        : "bg-yellow-500"
+                    }
                   >
                     {project.status}
                   </Badge>
                 </div>
-                <div className={`absolute top-4 ${isRTL ? 'left-4' : 'right-4'}`}>
+                <div className={`absolute top-4 ${isRTL ? "left-4" : "right-4"}`}>
                   <Badge variant="outline" className="bg-white">
                     {project.year}
                   </Badge>
                 </div>
               </div>
-              
-              <CardContent className="p-8">
-                <div className="mb-4">
-                  <Badge variant="secondary" className="text-xs">
-                    {project.category}
-                  </Badge>
-                </div>
-                <h3 className={`text-xl font-bold mb-4 ${isRTL ? 'text-right' : 'text-left'}`}>{project.title}</h3>
-                <p className={`text-muted-foreground mb-6 ${isRTL ? 'text-right' : 'text-left'}`}>
+
+              <CardContent className="p-6">
+                <Badge variant="secondary" className="text-xs mb-3">
+                  {project.category}
+                </Badge>
+                <h3
+                  className={`text-xl font-semibold mb-3 ${
+                    isRTL ? "text-right" : "text-left"
+                  }`}
+                >
+                  {project.title}
+                </h3>
+                <p
+                  className={`text-gray-600 mb-6 leading-relaxed ${
+                    isRTL ? "text-right" : "text-left"
+                  }`}
+                >
                   {project.description}
                 </p>
-                <Button variant="outline" className="w-full">
-                  {t('projects.viewDetails')}
-                  <ExternalLink className={`h-4 w-4 ${isRTL ? 'mr-2' : 'ml-2'}`} />
-                </Button>
+                <Link to={`/${language}/projects/${project.id}`}>
+                  <Button variant="outline" className="w-full font-medium">
+                    {t("projects.viewDetails")}
+                    <ExternalLink
+                      className={`h-4 w-4 ${isRTL ? "mr-2" : "ml-2"} inline-block`}
+                    />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center">
+        <div className="text-center mt-16">
           <Button size="lg" variant="outline">
-            {t('projects.viewAll')}
+            {t("projects.viewAll")}
           </Button>
         </div>
       </div>

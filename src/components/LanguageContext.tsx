@@ -93,19 +93,58 @@ const translations = {
     'services.maintenance.feature4': 'On-time commitment',
     
     // Projects
-    'projects.badge': 'Our Projects',
-    'projects.title': 'Showcasing Our Finest Work',
-    'projects.subtitle': 'Explore our portfolio of completed projects that demonstrate our commitment to quality, innovation, and client satisfaction.',
-    'projects.luxury.title': 'Luxury Residential Complex',
-    'projects.luxury.desc': 'A modern 50-unit residential complex featuring sustainable design and premium amenities.',
-    'projects.corporate.title': 'Corporate Headquarters',
-    'projects.corporate.desc': 'State-of-the-art office building with modern amenities and energy-efficient systems.',
-    'projects.manufacturing.title': 'Manufacturing Facility',
-    'projects.manufacturing.desc': 'Large-scale manufacturing plant with advanced automation and safety features.',
-    'projects.completed': 'Completed',
-    'projects.inProgress': 'In Progress',
-    'projects.viewDetails': 'View Details',
-    'projects.viewAll': 'View All Projects',
+    "projects.badge": "Our Projects",
+    "projects.title": "Showcasing Our Finest Work",
+    "projects.subtitle": "Explore our portfolio of completed projects that demonstrate our commitment to quality, innovation, and client satisfaction.",
+
+    "projects.luxury.title": "Luxury Residential Complex",
+    "projects.luxury.desc": "A modern 50-unit residential complex featuring sustainable design and premium amenities.",
+    "projects.luxury.overview": "This luxury residential project redefines modern living with elegant architecture and integrated smart systems. The design emphasizes open spaces, natural lighting, and seamless indoor-outdoor transitions.",
+    "projects.luxury.challenges": "Maintaining a balance between luxury aesthetics and structural practicality while adhering to environmental and energy efficiency regulations.",
+    "projects.luxury.results": "Delivered ahead of schedule with exceptional client satisfaction, setting new benchmarks for high-end residential standards.",
+    
+    "projects.luxury.scope.architecture": "Architectural design and 3D visualization",
+    "projects.luxury.scope.smart": "Smart lighting and climate control systems",
+    "projects.luxury.scope.interior": "Interior design and premium finishing",
+    "projects.luxury.scope.landscape": "Landscaping and pool construction",
+
+    "projects.corporate.title": "Corporate Headquarters",
+    "projects.corporate.desc": "State-of-the-art office building with modern amenities and energy-efficient systems.",
+    "projects.corporate.overview": "A cutting-edge corporate office designed to foster collaboration, productivity, and innovation. The project integrates energy-saving systems and modular office design.",
+    "projects.corporate.challenges": "Tight deadlines and strict corporate compliance required an agile design and execution strategy.",
+    "projects.corporate.results": "Currently under construction with all major milestones achieved ahead of schedule and within budget.",
+    
+    "projects.corporate.scope.architecture": "MEP design and integration",
+    "projects.corporate.scope.smart": "Sustainable material selection",
+    "projects.corporate.scope.interior": "Acoustic and ergonomic interior design",
+    "projects.corporate.scope.landscape": "Acoustic and ergonomic interior design",
+
+    "projects.manufacturing.title": "Manufacturing Facility",
+    "projects.manufacturing.desc": "Large-scale manufacturing plant with advanced automation and safety features.",
+    "projects.manufacturing.overview": "A large-scale manufacturing plant built for maximum efficiency and safety. Designed to accommodate advanced production lines with optimized energy and space usage.",
+    "projects.manufacturing.challenges": "Coordinating multiple engineering teams while maintaining full compliance with industrial safety standards.",
+    "projects.manufacturing.results": "Successfully delivered and operational, exceeding production targets with minimal energy consumption.",
+
+    "projects.manufacturing.scope.architecture": "Full electrical & mechanical systems",
+    "projects.manufacturing.scope.smart": "Fire & safety compliance to NFPA standards",
+    "projects.manufacturing.scope.interior":  "Warehouse & logistics zone planning",
+    "projects.manufacturing.scope.landscape": "Smart monitoring and maintenance systems",
+
+    "projects.completed": "Completed",
+    "projects.inProgress": "In Progress",
+    "projects.viewDetails": "View Details",
+    "projects.viewAll": "View All Projects",
+
+    "projects.overview": "Overview",
+    "projects.scopeOfWork": "Scope of Work",
+    "projects.challenges": "Challenges",
+    "projects.results": "Results",
+    "projects.back": "Back to Projects",
+    "projects.notFound": "Project not found",
+    
+
+
+
     
     // Contact
     'contact.badge': 'Contact Us',
@@ -223,20 +262,59 @@ const translations = {
     'services.maintenance.feature4': 'التزام بالمواعيد',
     
     // Projects
-    'projects.badge': 'مشاريعنا',
-    'projects.title': 'عرض أفضل أعمالنا',
-    'projects.subtitle': 'استكشف محفظة المشاريع المكتملة التي تُظهر التزامنا بالجودة والابتكار ورضا العملاء.',
-    'projects.luxury.title': 'مجمع سكني فاخر',
-    'projects.luxury.desc': 'مجمع سكني حديث مكون من 50 وحدة يتميز بتصميم مستدام ووسائل راحة متميزة.',
-    'projects.corporate.title': 'المقر الرئيسي للشركة',
-    'projects.corporate.desc': 'مبنى مكاتب متطور مع وسائل راحة حديثة وأنظمة موفرة للطاقة.',
-    'projects.manufacturing.title': 'منشأة تصنيع',
-    'projects.manufacturing.desc': 'مصنع تصنيع واسع النطاق مع أتمتة متقدمة وميزات أمان.',
-    'projects.completed': 'مكتمل',
-    'projects.inProgress': 'قيد التنفيذ',
-    'projects.viewDetails': 'عرض التفاصيل',
-    'projects.viewAll': 'عرض جميع المشاريع',
+    "projects.badge": "مشاريعنا",
+    "projects.title": "عرض أفضل أعمالنا",
+    "projects.subtitle": "استكشف محفظة المشاريع المكتملة التي تُظهر التزامنا بالجودة والابتكار ورضا العملاء.",
+
+    "projects.luxury.title": "مجمع سكني فاخر",
+    "projects.luxury.desc": "مجمع سكني حديث مكون من 50 وحدة يتميز بتصميم مستدام ووسائل راحة متميزة.",
+    "projects.luxury.overview": "يُعيد هذا المشروع الفاخر تعريف أسلوب المعيشة الحديثة من خلال تصميم معماري أنيق وأنظمة ذكية متكاملة، مع التركيز على المساحات المفتوحة والإضاءة الطبيعية والانتقال السلس بين المساحات الداخلية والخارجية.",
+    "projects.luxury.challenges": "الحفاظ على التوازن بين الفخامة العملية والامتثال لمعايير البيئة وكفاءة الطاقة.",
+    "projects.luxury.results": "تم تسليمه قبل الموعد المحدد وبمستوى عالٍ من رضا العملاء، مما وضع معايير جديدة للفخامة السكنية في المنطقة.",
+
+    "projects.luxury.scope.architecture": "التصميم المعماري والتصور ثلاثي الأبعاد",
+    "projects.luxury.scope.smart": "أنظمة الإضاءة الذكية والتحكم في المناخ",
+    "projects.luxury.scope.interior": "التصميم الداخلي والتشطيب المتميز",
+    "projects.luxury.scope.landscape": "تنسيق المناظر الطبيعية وإنشاء حمامات السباحة",
     
+    "projects.corporate.title": "المقر الرئيسي للشركة",
+    "projects.corporate.desc": "مبنى مكاتب متطور مع وسائل راحة حديثة وأنظمة موفرة للطاقة.",
+    "projects.corporate.overview": "مقر إداري متطور صُمم لتعزيز بيئة العمل التعاونية والإبداعية. يدمج أنظمة موفرة للطاقة وتصميمًا مرنًا للمكاتب.",
+    "projects.corporate.challenges": "تطلبت الجداول الزمنية الضيقة ومتطلبات الامتثال الصارمة تنفيذ إستراتيجية تصميم وتنفيذ مرنة وسريعة.",
+    "projects.corporate.results": "قيد التنفيذ حاليًا مع تحقيق جميع المراحل الأساسية في الوقت المحدد وضمن الميزانية.",
+    
+    "projects.corporate.scope.architecture": "تصميم وتكامل الهندسة الكهربائية والميكانيكية",
+    "projects.corporate.scope.smart": "الاختيار المستدام للمواد",
+    "projects.corporate.scope.interior": "تصميم داخلي صوتي ومريح",
+    "projects.corporate.scope.landscape": "تصميم داخلي صوتي ومريح",
+    
+    "projects.manufacturing.title": "منشأة تصنيع",
+    "projects.manufacturing.desc": "مصنع تصنيع واسع النطاق مع أتمتة متقدمة وميزات أمان عالية.",
+    "projects.manufacturing.overview": "منشأة تصنيع ضخمة تم تصميمها لتحقيق أقصى كفاءة وأمان، مع مراعاة استخدام الطاقة والمساحات بشكل مثالي.",
+    "projects.manufacturing.challenges": "تنسيق فرق هندسية متعددة مع الالتزام الكامل بمعايير السلامة الصناعية الصارمة.",
+    "projects.manufacturing.results": "تم التسليم بنجاح والمصنع يعمل بكفاءة عالية متجاوزًا الأهداف الإنتاجية مع استهلاك منخفض للطاقة.",
+
+    "projects.manufacturing.scope.architecture": "أنظمة كهربائية وميكانيكية كاملة",
+    "projects.manufacturing.scope.smart": "الامتثال لمعايير السلامة ومكافحة الحرائق لمعايير NFPA",
+    "projects.manufacturing.scope.interior": "تخطيط مناطق المستودعات والخدمات اللوجستية",
+    "projects.manufacturing.scope.landscape": "أنظمة المراقبة والصيانة الذكية",
+
+    "projects.scope.architecture": "التصميم المعماري والتصوير ثلاثي الأبعاد",
+    "projects.scope.smart": "أنظمة الإضاءة الذكية والتحكم في المناخ",
+    "projects.scope.interior": "التصميم الداخلي والتشطيبات الفاخرة",
+    "projects.scope.landscape": "تنسيق الحدائق وبناء المسابح",
+
+    "projects.completed": "مكتمل",
+    "projects.inProgress": "قيد التنفيذ",
+    "projects.viewDetails": "عرض التفاصيل",
+    "projects.viewAll": "عرض جميع المشاريع",
+
+    "projects.overview": "نظرة عامة",
+    "projects.scopeOfWork": "نطاق العمل",
+    "projects.challenges": "التحديات",
+    "projects.results": "النتائج",
+    "projects.back": "العودة إلى المشاريع",
+    "projects.notFound": "المشروع غير موجود",
     // Contact
     'contact.badge': 'اتصل بنا',
     'contact.title': 'جاهز لبدء مشروعك؟',
@@ -284,7 +362,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }, [language]);
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    return (translations[language] as Record<string, string>)[key] || key;
   };
 
   const value = {
