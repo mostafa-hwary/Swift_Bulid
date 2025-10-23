@@ -17,7 +17,7 @@ export function About() {
 
   return (
     <section id="about" className="py-20 bg-gray-50">
-      <div className="container">
+      <div className="container px-8 lg:px-16">
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">{t('about.badge')}</Badge>
           <h2 className="text-4xl font-bold mb-6">

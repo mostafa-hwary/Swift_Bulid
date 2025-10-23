@@ -38,7 +38,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="py-24 bg-gray-50">
-      <div className="container">
+      <div className="container px-8 lg:px-16">
         <div className="text-center mb-20">
           <Badge variant="secondary" className="mb-4">{t('projects.badge')}</Badge>
           <h2 className="text-4xl font-bold mb-8">

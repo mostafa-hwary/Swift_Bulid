@@ -18,7 +18,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-24">
-      <div className="container">
+      <div className="container px-8 lg:px-16">
         <div className="text-center mb-20">
           <Badge variant="secondary" className="mb-4">{t('contact.badge')}</Badge>
           <h2 className="text-4xl font-bold mb-8">
