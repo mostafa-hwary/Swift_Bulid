@@ -94,6 +94,9 @@ const translations = {
     "services.back": 'Back to Services',
     
     //services.details
+
+    'services.viewDetails':" View Details",
+
     'services.details.construction.title': 'Construction ',
     'services.details.construction.desc': "A core pillar since inception with cross-discipline integration between electrical and mechanical teams to reduce clashes, accelerate delivery, and assure quality.",
     'services.details.construction.feature1':"Cross-discipline integration between teams",
@@ -183,6 +186,65 @@ const translations = {
     "projects.manufacturing.scope.interior":  "Warehouse & logistics zone planning",
     "projects.manufacturing.scope.landscape": "Smart monitoring and maintenance systems",
 
+    "projects.benzaghr.title": "Electromechanical Works for Bin Zagr Insulation Factory",
+    "projects.benzaghr.desc": "Full electromechanical systems execution for Bin Zagr insulation factory in Jubail Second Industrial Area.",
+    "projects.benzaghr.overview": "The project covers the design and installation of mechanical and electrical systems to ensure stable and efficient industrial operation.",
+    "projects.benzaghr.challenges": "Maintaining high industrial safety standards while delivering reliable and precise installations.",
+    "projects.benzaghr.results": "Successfully completed with improved operational efficiency and reduced downtime.",
+    
+    "projects.benzaghr.scope.design": "Architectural design and execution drawings",
+    "projects.benzaghr.scope.mep": "Mechanical and electrical (MEP) systems implementation",
+    "projects.benzaghr.scope.commissioning": "Systems testing and commissioning",
+    "projects.benzaghr.scope.safety": "Implementation of HSE and site safety standards",
+    "projects.benzaghr.scope.procurement": "Procurement of specialized equipment and systems",
+
+    "projects.ababitin.title": "Electromechanical Works for Ababitin Private Residential Complex",
+    "projects.ababitin.desc": "Electromechanical works execution for the private residential compound in Ababitin, Rakah.",
+    "projects.ababitin.overview": "Installation of integrated electrical and mechanical systems to provide a reliable and comfortable living environment.",
+    "projects.ababitin.challenges": "Coordinating technical works with finishing stages while maintaining quality standards.",
+    "projects.ababitin.results": "Delivered with high-quality infrastructure serving all residential units.",
+
+    "projects.ababitin.scope.mep": "Installation of mechanical, electrical and plumbing systems",
+    "projects.ababitin.scope.interiors": "High-quality interior finishes and fixtures",
+    "projects.ababitin.scope.installation": "HVAC, electrical and ventilation system installation",
+    "projects.ababitin.scope.coordination": "Contractor and stakeholder coordination",
+    "projects.ababitin.scope.warranty": "Post-delivery technical support and warranty",
+
+    "projects.shiblan.title": "Electromechanical Works for Al Shiblan Mall",
+    "projects.shiblan.desc": "Execution of electromechanical works for Al Shiblan Mall in North Khobar.",
+    "projects.shiblan.overview": "Includes installing large-scale electromechanical systems suitable for commercial center operations.",
+    "projects.shiblan.challenges": "Designing systems capable of continuous operation while meeting energy, ventilation, and safety requirements.",
+    "projects.shiblan.results": "Delivered a fully integrated infrastructure supporting efficient mall operation.",
+    
+    "projects.shiblan.scope.mep": "Design & execution of mall-scale electromechanical systems",
+    "projects.shiblan.scope.fire": "Fire-fighting systems and early-warning alarm systems",
+    "projects.shiblan.scope.energy": "Energy management and industrial ventilation solutions",
+    "projects.shiblan.scope.infra": "Utility infrastructure and technical services setup",
+    "projects.shiblan.scope.maintenance": "Operational maintenance plan post-handover",
+
+    "projects.hayatFinishes.title": "Finishing Works for Hayat Residential Units",
+    "projects.hayatFinishes.desc": "Full interior finishing for residential units in the Hayat project.",
+    "projects.hayatFinishes.overview": "High-quality finishing executed with precision across all construction phases.",
+    "projects.hayatFinishes.challenges": "Ensuring consistent finishing quality while meeting delivery timelines.",
+    "projects.hayatFinishes.results": "Delivered premium units that meet client expectations and elevate the project's value.",
+ 
+    "projects.hayatFinishes.scope.finishings": "Interior and exterior finishing works for residential units",
+    "projects.hayatFinishes.scope.quality": "Quality control and premium final finishing",
+    "projects.hayatFinishes.scope.procurement": "Supply of finishing materials and furnishings",
+    "projects.hayatFinishes.scope.inspection": "Final quality inspection and unit handover readiness",
+
+    "projects.rakahUnits.title": "Electromechanical & Finishing Works for Rakah Residential Units",
+    "projects.rakahUnits.desc": "Complete electromechanical and finishing works for residential units in Rakah.",
+    "projects.rakahUnits.overview": "Combines MEP systems installation with high-standard finishing works for fully ready units.",
+    "projects.rakahUnits.challenges": "Managing and synchronizing multi-scope work within a unified schedule.",
+    "projects.rakahUnits.results": "Delivered high-quality units with complete infrastructure and system readiness.",
+
+    "projects.rakahUnits.scope.mep": "Electromechanical works (electrical, mechanical, plumbing)",
+    "projects.rakahUnits.scope.finishings": "Interior finishing and final trades",
+    "projects.rakahUnits.scope.integration": "Systems integration and final connections",
+    "projects.rakahUnits.scope.testing": "Operational testing and compliance certification",
+    "projects.rakahUnits.scope.handsover": "Full handover with as-built drawings & O&M manuals",
+
     "projects.completed": "Completed",
     "projects.inProgress": "In Progress",
     "projects.viewDetails": "View Details",
@@ -194,6 +256,13 @@ const translations = {
     "projects.results": "Results",
     "projects.back": "Back to Projects",
     "projects.notFound": "Project not found",
+
+    'projects.categoryElectromechanical': "Electromechanical",
+    'projects.categoryFinishing': "Finishing Works",
+    'projects.categoryResidential': "Residential",
+    'projects.categoryCommercial': "Commercial",
+    'projects.categoryIndustrial': "Industrial",
+    'projects.categoryElectroFinish': "Electromechanical & Finishing",
     
 
 
@@ -230,7 +299,7 @@ const translations = {
     'footer.licensed': 'Licensed & Insured Construction Company',
     'footer.quickLinks': 'Quick Links',
     'footer.ourServices': 'Our Services',
-    'footer.rights': '© 2024 Swift Build. All rights reserved.',
+    'footer.rights': '© 2025 Swift Build. All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
     'footer.cookies': 'Cookie Policy'
@@ -318,6 +387,7 @@ const translations = {
     "services.back": 'العودة إلى الخدمات',
     
     //services.details
+    'services.viewDetails':" عرض التفاصيل",
     'services.details.construction.title': 'إنشاءات',
     'services.details.construction.desc': "ركيزة أساسية منذ البداية مع التكامل متعدد التخصصات بين الفرق الكهربائية والميكانيكية لتقليل الاشتباكات وتسريع التسليم وضمان الجودة.",
     'services.details.construction.feature1':"التكامل متعدد التخصصات بين الفرق",
@@ -403,6 +473,65 @@ const translations = {
     "projects.scope.interior": "التصميم الداخلي والتشطيبات الفاخرة",
     "projects.scope.landscape": "تنسيق الحدائق وبناء المسابح",
 
+    "projects.benzaghr.title": "أعمال الإلكتروميكانيك لمصنع بن زقر للعوازل",
+    "projects.benzaghr.desc": "تنفيذ أعمال الإلكتروميكانيك الكاملة لمصنع بن زقر للعوازل في الصناعية الثانية بالجبيل.",
+    "projects.benzaghr.overview": "يشمل المشروع تصميم وتنفيذ الأنظمة الميكانيكية والكهربائية وفق معايير عالية لضمان تشغيل مستقر وكفاءة تشغيلية للمصنع.",
+    "projects.benzaghr.challenges": "تحقيق أعلى مستويات السلامة الصناعية مع الالتزام بمتطلبات الجودة في بيئة تشغيلية معقدة.",
+    "projects.benzaghr.results": "تم تنفيذ المشروع بنجاح مع تحسين الأداء التشغيلي وتقليل الأعطال ورفع كفاءة التشغيل.",
+  
+    "projects.benzaghr.scope.design": "تصميم معماري وتنفيذ الرسومات التنفيذية",
+    "projects.benzaghr.scope.mep": "أنظمة ميكانيكية وكهربائية (MEP) وتشغيلية",
+    "projects.benzaghr.scope.commissioning": "اختبار وتشغيل الأنظمة (Testing & Commissioning)",
+    "projects.benzaghr.scope.safety": "تطبيق معايير السلامة والصحة المهنية",
+    "projects.benzaghr.scope.procurement": "توريد معدات وأنظمة متخصصة",
+
+    "projects.ababitin.title": "أعمال الإلكتروميكانيك لمجمع سكني خاص أبابطين",
+    "projects.ababitin.desc": "تنفيذ أعمال الإلكتروميكانيك للمجمع السكني الخاص في أبابطين بالراكة.",
+    "projects.ababitin.overview": "تم تنفيذ الأنظمة الكهربائية والميكانيكية بشكل متكامل لتوفير بيئة معيشية عالية الاعتمادية والراحة.",
+    "projects.ababitin.challenges": "التنسيق بين الأعمال السكنية والتشطيبات النهائية مع الالتزام بالمعايير الفنية.",
+    "projects.ababitin.results": "تم التسليم بجودة عالية وضمان جاهزية البنية التحتية لجميع وحدات المشروع.",
+    
+    "projects.ababitin.scope.mep": "تنفيذ الأنظمة الميكانيكية والكهربائية والسباكة",
+    "projects.ababitin.scope.interiors": "تشطيبات داخلية عالية الجودة والتجهيزات",
+    "projects.ababitin.scope.installation": "تركيب أنظمة التكييف والتهوية والكهرباء",
+    "projects.ababitin.scope.coordination": "تنسيق الأعمال بين المقاولين والجهات المعنية",
+    "projects.ababitin.scope.warranty": "دعم فني وضمان بعد التسليم",
+
+    "projects.shiblan.title": "أعمال الإلكتروميكانيك لمول الشبلان",
+    "projects.shiblan.desc": "تنفيذ أعمال الإلكتروميكانيك في مشروع مول الشبلان بالخبر الشمالية.",
+    "projects.shiblan.overview": "يتضمن المشروع تركيب وتنفيذ الأنظمة الكهروميكانيكية بما يلائم طبيعة المراكز التجارية كبيرة الحجم.",
+    "projects.shiblan.challenges": "تصميم أنظمة تتحمل التشغيل المستمر مع مراعاة معايير السلامة والتهوية والتحكم بالطاقة.",
+    "projects.shiblan.results": "تطوير بنية متكاملة تدعم تشغيل المول بكفاءة عالية وموثوقية ممتازة.",
+
+    "projects.shiblan.scope.mep": "تصميم وتنفيذ أنظمة إلكتروميكانيك لمراكز تجارية",
+    "projects.shiblan.scope.fire": "أنظمة المكافحة والحريق وأنظمة إنذار مبكر",
+    "projects.shiblan.scope.energy": "حلول إدارة الطاقة والتهوية الصناعية",
+    "projects.shiblan.scope.infra": "بنية تحتية للمرافق والخدمات الفنية",
+    "projects.shiblan.scope.maintenance": "خطة صيانة تشغيلية ما بعد التسليم",
+
+    "projects.hayatFinishes.title": "أعمال التشطيبات لوحدات سكنية بمشروع حياة",
+    "projects.hayatFinishes.desc": "تنفيذ تشطيبات كاملة للوحدات السكنية في مشروع حياة.",
+    "projects.hayatFinishes.overview": "يشمل المشروع تنفيذ أعمال تشطيب احترافية تركز على الجودة والدقة في جميع المراحل.",
+    "projects.hayatFinishes.challenges": "ضمان الاتساق في جودة التشطيبات مع الالتزام بالمواعيد المحددة.",
+    "projects.hayatFinishes.results": "تسليم وحدات بتشطيبات فاخرة تلبي توقعات العملاء وتعزز قيمة المشروع.",
+
+    "projects.hayatFinishes.scope.finishings": "تشطيبات داخلية وخارجية للوحدات السكنية",
+    "projects.hayatFinishes.scope.quality": "ضوابط جودة وتشطيب نهائي وفق مواصفات عالية",
+    "projects.hayatFinishes.scope.procurement": "توريد المواد والفرش والمستلزمات النهائية",
+    "projects.hayatFinishes.scope.inspection": "فحص جودة نهائي وتسليم الوحدة جاهزة للسكن",
+
+    "projects.rakahUnits.title": "أعمال الإلكتروميكانيك والتشطيبات بوحدات سكنية بالراكة",
+    "projects.rakahUnits.desc": "تنفيذ أعمال الإلكتروميكانيك والتشطيبات للوحدات السكنية في الراكة.",
+    "projects.rakahUnits.overview": "يجمع المشروع بين الأعمال الميكانيكية والكهربائية والتشطيبات النهائية لتقديم وحدات متكاملة الجاهزية.",
+    "projects.rakahUnits.challenges": "إدارة تعدد الأعمال وتنسيقها ضمن جدول زمني واحد لضمان جودة التنفيذ.",
+    "projects.rakahUnits.results": "تسليم وحدات عالية الجودة مع جاهزية كاملة للبنية التحتية والخدمات.",
+    
+    "projects.rakahUnits.scope.mep": "أعمال الإلكتروميكانيك (كهرباء، ميكانيكا، سباكة)",
+    "projects.rakahUnits.scope.finishings": "تشطيبات داخلية وخدمات نهاية الأعمال",
+    "projects.rakahUnits.scope.integration": "تكامل الأنظمة والتوصيلات النهائية",
+    "projects.rakahUnits.scope.testing": "اختبارات تشغيلية وشهادات مطابقة للمواصفات",
+    "projects.rakahUnits.scope.handsover": "تسليم كامل مع ملفات أساسية (As-built & O&M)",
+
     "projects.completed": "مكتمل",
     "projects.inProgress": "قيد التنفيذ",
     "projects.viewDetails": "عرض التفاصيل",
@@ -414,6 +543,14 @@ const translations = {
     "projects.results": "النتائج",
     "projects.back": "العودة إلى المشاريع",
     "projects.notFound": "المشروع غير موجود",
+
+    'projects.categoryElectromechanical': "إلكتروميكانيك",
+    'projects.categoryFinishing': "أعمال التشطيبات",
+    'projects.categoryResidential': "سكني",
+    'projects.categoryCommercial': "تجاري",
+    'projects.categoryIndustrial': "صناعي",
+    'projects.categoryElectroFinish': "إلكتروميكانيك وتشطيبات",
+    
     // Contact
     'contact.badge': 'اتصل بنا',
     'contact.title': 'جاهز لبدء مشروعك؟',
@@ -445,7 +582,7 @@ const translations = {
     'footer.licensed': 'شركة بناء مرخصة ومؤمنة',
     'footer.quickLinks': 'روابط سريعة',
     'footer.ourServices': 'خدماتنا',
-    'footer.rights': '© 2024 سويفت بيلد. جميع الحقوق محفوظة.',
+    'footer.rights': '© 2025 سويفت بيلد. جميع الحقوق محفوظة.',
     'footer.privacy': 'سياسة الخصوصية',
     'footer.terms': 'شروط الخدمة',
     'footer.cookies': 'سياسة الكوكيز'

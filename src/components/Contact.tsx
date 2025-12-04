@@ -232,8 +232,11 @@ export function Contact() {
                   <div className={isRTL ? 'text-right' : 'text-left'}>
                     <h3 className="font-semibold mb-2">{t('contact.email')}</h3>
                     <p className="text-muted-foreground">
-                      info@swiftbuild.sa<br />
-                      projects@swiftbuild.sa
+                      info@swiftbuild-sa.com <br />
+                      sales@swiftbuild-sa.com <br />
+                      abdullah@swiftbuild-sa.com <br />
+                      mohammed@swiftbuild-sa.com <br />
+                      amr@swiftbuild-sa.com <br />
                     </p>
                   </div>
                 </div>

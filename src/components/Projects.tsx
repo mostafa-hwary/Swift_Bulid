@@ -6,11 +6,14 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useLanguage } from "./LanguageContext";
 import { Link } from "react-router-dom";
 import "../index.css";
+import "../assets/projects/benzaghr.jpg"
+
 
 export function Projects() {
-const { t, language, isRTL } = useLanguage();
+  const { t, language, isRTL } = useLanguage();
 
   const projects = [
+    // Original projects
     {
       id: 1,
       title: t("projects.luxury.title"),
@@ -19,7 +22,7 @@ const { t, language, isRTL } = useLanguage();
       image:
         "https://images.unsplash.com/photo-1672331713329-65c270686b71?auto=format&fit=crop&w=1080&q=80",
       status: t("projects.completed"),
-      year: "2024",
+      year: "2025",
     },
     {
       id: 2,
@@ -41,6 +44,53 @@ const { t, language, isRTL } = useLanguage();
       status: t("projects.completed"),
       year: "2023",
     },
+
+    // 🔵 New Projects (Translations Applied)
+    {
+      id: 4,
+      title: t("projects.benzaghr.title"),
+      category: 'Electromechanical',
+      description: t("projects.benzaghr.desc"),
+      image: "https://6931a2ad06de332fac041a47.imgix.net/benzaghr.jpg", // ضع رابط الصورة الصحيح
+      status: t("projects.completed"),
+      year: "2022",
+    },
+    {
+      id: 5,
+      title: t("projects.ababitin.title"),
+      category: 'Electromechanical',
+      description: t("projects.ababitin.desc"),
+      image: "https://6931a2ad06de332fac041a47.imgix.net/ababitin.jpg",
+      status: t("projects.completed"),
+      year: "2019",
+    },
+    {
+      id: 6,
+      title: t("projects.shiblan.title"),
+      category: 'Electromechanical',
+      description: t("projects.shiblan.desc"),
+      image: "https://6931a2ad06de332fac041a47.imgix.net/shiblan.jpg",
+      status: t("projects.completed"),
+      year: "2021",
+    },
+    {
+      id: 7,
+      title: t("projects.hayatFinishes.title"),
+      category: 'Finishing Works',
+      description: t("projects.hayatFinishes.desc"),
+      image: "https://6931a2ad06de332fac041a47.imgix.net/hayat-finishes.jpg",
+      status: t("projects.completed"),
+      year: "2017",
+    },
+    {
+      id: 8,
+      title: t("projects.rakahUnits.title"),
+      category: 'Electromechanical',
+      description: t("projects.rakahUnits.desc"),
+      image: "https://6931a2ad06de332fac041a47.imgix.net/rakah-units.jpg",
+      status: t("projects.completed"),
+      year: "2020",
+    },
   ];
 
   return (
@@ -50,7 +100,11 @@ const { t, language, isRTL } = useLanguage();
           <Badge variant="secondary" className="mb-4">
             {t("projects.badge")}
           </Badge>
-          <h2 className="text-4xl font-bold mb-6">{t("projects.title")}</h2>
+
+          <h2 className="text-4xl font-bold mb-6">
+            {t("projects.title")}
+          </h2>
+
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             {t("projects.subtitle")}
           </p>
@@ -62,12 +116,15 @@ const { t, language, isRTL } = useLanguage();
               key={project.id}
               className="overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 rounded-2xl"
             >
+              {/* Image */}
               <div className="relative w-full aspect-[4/3] overflow-hidden">
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
+
+                {/* Status Badge */}
                 <div className={`absolute top-4 ${isRTL ? "right-4" : "left-4"}`}>
                   <Badge
                     variant={
@@ -84,17 +141,27 @@ const { t, language, isRTL } = useLanguage();
                     {project.status}
                   </Badge>
                 </div>
-                <div className={`absolute top-4 ${isRTL ? "left-4" : "right-4"}`}>
-                  <Badge variant="outline" className="bg-white">
-                    {project.year}
-                  </Badge>
-                </div>
+
+                {/* Year */}
+                {project.year && (
+                  <div
+                    className={`absolute top-4 ${
+                      isRTL ? "left-4" : "right-4"
+                    }`}
+                  >
+                    <Badge variant="outline" className="bg-white">
+                      {project.year}
+                    </Badge>
+                  </div>
+                )}
               </div>
 
+              {/* Content */}
               <CardContent className="p-6">
                 <Badge variant="secondary" className="text-xs mb-3">
                   {project.category}
                 </Badge>
+
                 <h3
                   className={`text-xl font-semibold mb-3 ${
                     isRTL ? "text-right" : "text-left"
@@ -102,6 +169,7 @@ const { t, language, isRTL } = useLanguage();
                 >
                   {project.title}
                 </h3>
+
                 <p
                   className={`text-gray-600 mb-6 leading-relaxed ${
                     isRTL ? "text-right" : "text-left"
@@ -109,11 +177,14 @@ const { t, language, isRTL } = useLanguage();
                 >
                   {project.description}
                 </p>
+
                 <Link to={`/${language}/projects/${project.id}`}>
                   <Button variant="outline" className="w-full font-medium">
                     {t("projects.viewDetails")}
                     <ExternalLink
-                      className={`h-4 w-4 ${isRTL ? "mr-2" : "ml-2"} inline-block`}
+                      className={`h-4 w-4 ${
+                        isRTL ? "mr-2" : "ml-2"
+                      } inline-block`}
                     />
                   </Button>
                 </Link>
@@ -122,11 +193,11 @@ const { t, language, isRTL } = useLanguage();
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <Button size="lg" variant="outline">
             {t("projects.viewAll")}
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

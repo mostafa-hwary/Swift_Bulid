@@ -30,12 +30,16 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 mb-16">
-            <Button size="lg" className="bg-[#2527A9] hover:bg-[#1e1f8a] text-white">
-              {t('hero.startProject')}
-              <ArrowRight className={`h-5 w-5 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
-            </Button>
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#2527A9] hover:bg-[#1e1f8a] text-white text-sm font-medium">
+              {t("hero.startProject")}
+              <ArrowRight className={`h-5 w-5 ${isRTL ? "mr-2 rotate-180" : "ml-2"}`} />
+            </a>
             <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-black">
-              {t('hero.viewWork')}
+              <a href="#projects" className="flex items-center" >
+                {t('hero.viewWork')}
+              </a>
             </Button>
           </div>
           
