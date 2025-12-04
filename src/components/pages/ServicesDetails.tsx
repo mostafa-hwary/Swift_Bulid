@@ -7,12 +7,12 @@ import { useEffect } from "react"; // ✅ علشان scroll to top
 
 
 // الصور
-import constructionImg from "./images/Construction.jpg";
-import electricalImg from "./images/Electrical Works.jpg";
-import plumbingImg from "./images/Plumbing Works.jpg";
-import fireImg from "./images/Fire & Early Warning Systems.jpg";
-import plasteringImg from "./images/Plastering & Finishes.jpg";
-import maintenanceImg from "./images/Support & Maintenance.jpg";
+import constructionImg from "https://6931a2ad06de332fac041a47.imgix.net/Construction.jpg";
+import electricalImg from "https://6931a2ad06de332fac041a47.imgix.net/Electrical%20Works.jpg";
+import plumbingImg from "https://6931a2ad06de332fac041a47.imgix.net/Plumbing%20Works.jpg";
+import fireImg from "https://6931a2ad06de332fac041a47.imgix.net/Fire%20&%20Early%20Warning%20Systems.jpg";
+import plasteringImg from "https://6931a2ad06de332fac041a47.imgix.net/Plastering%20&%20Finishes.jpg";
+import maintenanceImg from "https://6931a2ad06de332fac041a47.imgix.net/Support%20&%20Maintenance.jpg";
 
 export default function ServicesDetails() {
   const { id } = useParams();
