@@ -72,7 +72,7 @@ export default function ProjectDetails() {
       title: t("projects.luxury.title"),
       category:  t("projects.categoryResidential"),
       image:
-        "https://images.unsplash.com/photo-1672331713329-65c270686b71",
+        "https://6931a2ad06de332fac041a47.imgix.net/1-villa_300_riyadh_paramo_arquitectos.jpg",
       status: t("projects.completed"),
       year: "2024",
       overview: t("projects.luxury.overview"),
@@ -90,8 +90,8 @@ export default function ProjectDetails() {
       title: t("projects.categoryCommercial"),
       category:  t("projects.corporate.desc"),
       image:
-        "https://images.unsplash.com/photo-1748771886624-0f0aa2729a37",
-      status: t("projects.inProgress"),
+        "https://6931a2ad06de332fac041a47.imgix.net/Corporate%20Headquarters.webp",
+      status: t("projects.completed"),
       year: "2024",
       overview: t("projects.corporate.overview"),
       scope: [

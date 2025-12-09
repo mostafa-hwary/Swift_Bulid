@@ -7,12 +7,12 @@ import { useEffect } from "react"; // ✅ علشان scroll to top
 
 
 // الصور
-import constructionImg from "https://6931a2ad06de332fac041a47.imgix.net/Construction.jpg";
-import electricalImg from "https://6931a2ad06de332fac041a47.imgix.net/Electrical%20Works.jpg";
-import plumbingImg from "https://6931a2ad06de332fac041a47.imgix.net/Plumbing%20Works.jpg";
-import fireImg from "https://6931a2ad06de332fac041a47.imgix.net/Fire%20&%20Early%20Warning%20Systems.jpg";
-import plasteringImg from "https://6931a2ad06de332fac041a47.imgix.net/Plastering%20&%20Finishes.jpg";
-import maintenanceImg from "https://6931a2ad06de332fac041a47.imgix.net/Support%20&%20Maintenance.jpg";
+const constructionImg = "https://6931a2ad06de332fac041a47.imgix.net/Construction.jpg";
+const electricalImg = "https://6931a2ad06de332fac041a47.imgix.net/thumb3.webp";
+const plumbingImg = "https://6931a2ad06de332fac041a47.imgix.net/Plumbing%20Works.jpg";
+const fireImg = "https://6931a2ad06de332fac041a47.imgix.net/Fire%20&%20Early%20Warning%20Systems.jpg";
+const plasteringImg = "https://6931a2ad06de332fac041a47.imgix.net/Plastering%20&%20Finishes.jpg";
+const maintenanceImg = "https://6931a2ad06de332fac041a47.imgix.net/Support%20&%20Maintenance.jpg";
 
 export default function ServicesDetails() {
   const { id } = useParams();

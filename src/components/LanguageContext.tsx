@@ -40,7 +40,7 @@ const translations = {
     'about.feature1': 'Strong internal coordination',
     'about.feature2': 'Specialized expertise',
     'about.feature3': 'Commitment to quality and timelines',
-    'about.stat1': '500+',
+    'about.stat1': '30+',
     'about.stat1Label': 'Projects Completed',
     'about.stat2': '50+',
     'about.stat2Label': 'Expert Team Members',
@@ -245,6 +245,25 @@ const translations = {
     "projects.rakahUnits.scope.testing": "Operational testing and compliance certification",
     "projects.rakahUnits.scope.handsover": "Full handover with as-built drawings & O&M manuals",
 
+    "projects.moreProjects":"More Projects",
+    "projects.Residential_Villa_Al_Ahsa.title":"Residential Villa — Al Ahsa",
+    "projects.Residential_Villa_Al_Ahsa.subtitle":"Construction, electrical & mechanical works",
+
+    "projects.Residential_Villa_Al_Dammam.title":"Residential Villa — Dammam",
+    "projects.Residential_Villa_Al_Dammam.subtitle":"Construction, electrical & mechanical works",
+
+    "projects.Bin_Sanem_Factory.title":"Electrical Works — Bin Sanem Factory",
+    "projects.Bin_Sanem_Factory.subtitle":"Electrical installation & industrial systems",
+    
+    "projects.Residential_Villa_Al_Khobar.title":"Residential Villa — Al Khobar",
+    "projects.Residential_Villa_Al_Khobar.subtitle":"Construction, electrical & mechanical works",
+    
+    "projects.Residential_Villa_Al_Jubail.title":"Residential Villa — Al Jubail",
+    "projects.Residential_Villa_Al_Jubail.subtitle":"Construction, electrical & mechanical works",
+
+    "projects.Residential_Villa_Qatif.title":"Residential Villa — Qatif",
+    "projects.Residential_Villa_Qatif.subtitle":"Construction, electrical & mechanical works",
+
     "projects.completed": "Completed",
     "projects.inProgress": "In Progress",
     "projects.viewDetails": "View Details",
@@ -333,7 +352,7 @@ const translations = {
     'about.feature1': 'تنسيق داخلي عالي',
     'about.feature2': 'خبرات متخصصة',
     'about.feature3': 'التزام بالجودة والمواعيد',
-    'about.stat1': '+500',
+    'about.stat1': '+30',
     'about.stat1Label': 'مشروع مكتمل',
     'about.stat2': '+50',
     'about.stat2Label': 'عضو فريق خبير',
@@ -531,6 +550,26 @@ const translations = {
     "projects.rakahUnits.scope.integration": "تكامل الأنظمة والتوصيلات النهائية",
     "projects.rakahUnits.scope.testing": "اختبارات تشغيلية وشهادات مطابقة للمواصفات",
     "projects.rakahUnits.scope.handsover": "تسليم كامل مع ملفات أساسية (As-built & O&M)",
+
+    "projects.moreProjects":"مشاريع اخرى",
+
+    "projects.Residential_Villa_Al_Ahsa.title": "فيلا سكنية — الأحساء",
+    "projects.Residential_Villa_Al_Ahsa.subtitle": "أعمال الإنشاءات والكهرباء والميكانيكا",
+
+    "projects.Residential_Villa_Al_Dammam.title": "فيلا سكنية — الدمام",
+    "projects.Residential_Villa_Al_Dammam.subtitle": "أعمال الإنشاءات والكهرباء والميكانيكا",
+
+    "projects.Bin_Sanem_Factory.title": "الأعمال الكهربائية — مصنع بن سنيم",
+    "projects.Bin_Sanem_Factory.subtitle": "تركيبات كهربائية وأنظمة صناعية",
+
+    "projects.Residential_Villa_Al_Khobar.title": "فيلا سكنية — الخبر",
+    "projects.Residential_Villa_Al_Khobar.subtitle": "أعمال الإنشاءات والكهرباء والميكانيكا",
+
+    "projects.Residential_Villa_Al_Jubail.title": "فيلا سكنية — الجبيل",
+    "projects.Residential_Villa_Al_Jubail.subtitle": "أعمال الإنشاءات والكهرباء والميكانيكا",
+
+    "projects.Residential_Villa_Qatif.title": "فيلا سكنية — القطيف",
+    "projects.Residential_Villa_Qatif.subtitle": "أعمال الإنشاءات والكهرباء والميكانيكا",
 
     "projects.completed": "مكتمل",
     "projects.inProgress": "قيد التنفيذ",

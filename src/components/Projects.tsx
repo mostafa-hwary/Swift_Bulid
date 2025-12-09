@@ -20,7 +20,7 @@ export function Projects() {
       category: "Residential",
       description: t("projects.luxury.desc"),
       image:
-        "https://images.unsplash.com/photo-1672331713329-65c270686b71?auto=format&fit=crop&w=1080&q=80",
+        "https://6931a2ad06de332fac041a47.imgix.net/1-villa_300_riyadh_paramo_arquitectos.jpg?auto=format&fit=crop&w=1080&q=80",
       status: t("projects.completed"),
       year: "2025",
     },
@@ -30,8 +30,8 @@ export function Projects() {
       category: "Commercial",
       description: t("projects.corporate.desc"),
       image:
-        "https://images.unsplash.com/photo-1748771886624-0f0aa2729a37?auto=format&fit=crop&w=1080&q=80",
-      status: t("projects.inProgress"),
+        "https://6931a2ad06de332fac041a47.imgix.net/Corporate%20Headquarters.webp?auto=format&fit=crop&w=1080&q=80",
+      status: t("projects.completed"),
       year: "2024",
     },
     {
@@ -92,6 +92,45 @@ export function Projects() {
       year: "2020",
     },
   ];
+    const compactProjects = [
+    {
+      id: "a",
+      title: t("projects.Residential_Villa_Al_Ahsa.title"),
+      subtitle: t("projects.Residential_Villa_Al_Ahsa.subtitle"),
+      img: "https://6931a2ad06de332fac041a47.imgix.net/thumb1.jpg",
+    },
+    {
+      id: "b",
+      title: t("projects.Residential_Villa_Al_Dammam.title"),
+      subtitle: t("projects.Residential_Villa_Al_Dammam.subtitle"),
+      img: "https://6931a2ad06de332fac041a47.imgix.net/thumb2.jpg",
+    },
+    {
+      id: "c",
+      title: t("projects.Bin_Sanem_Factory.title"),
+      subtitle: t("projects.Bin_Sanem_Factory.subtitle"),
+      img: "https://6931a2ad06de332fac041a47.imgix.net/thumb3.webp",
+    },
+    {
+      id: "d",
+      title: t("projects.Residential_Villa_Al_Khobar.title"),
+      subtitle: t("projects.Residential_Villa_Al_Khobar.subtitle"),
+      img: "https://6931a2ad06de332fac041a47.imgix.net/thumb4.webp",
+    },
+    {
+      id: "e",
+      title: t("projects.Residential_Villa_Al_Jubail.title"),
+      subtitle: t("projects.Residential_Villa_Al_Jubail.subtitle"),
+      img: "https://6931a2ad06de332fac041a47.imgix.net/thumb5.jpg",
+    },
+    {
+      id: "f",
+      title: t("projects.Residential_Villa_Qatif.title"),
+      subtitle: t("projects.Residential_Villa_Qatif.subtitle"),
+      img: "https://6931a2ad06de332fac041a47.imgix.net/thumb6.jpg",
+    },
+  ];
+
 
   return (
     <section id="projects" className="py-24 bg-gray-50">
@@ -192,6 +231,49 @@ export function Projects() {
             </Card>
           ))}
         </div>
+
+        {/* ===== Compact Projects Section ===== */}
+      <section className="mt-20">
+        <h3 className={`text-2xl font-bold mb-8 ${isRTL ? "text-right" : "text-left"}`}>
+          {t("projects.moreProjects") || "More Projects"}
+        </h3>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {compactProjects.map((p) => (
+            <article
+              key={p.id}
+              className="flex items-start gap-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 p-4 border border-gray-100"
+            >
+              <div
+                className={`w-28 h-20 rounded-lg overflow-hidden border border-gray-200 shrink-0 ${
+                  isRTL ? "ml-4" : "mr-4"
+                }`}
+              >
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  onError={(e) =>
+                    (e.currentTarget.src =
+                      "https://via.placeholder.com/320x240?text=Image+Unavailable")
+                  }
+                />
+              </div>
+
+              <div className={`flex-1 ${isRTL ? "text-right" : "text-left"}`}>
+                <h4 className="text-lg font-semibold text-gray-800 hover:text-[#2527A9] transition-colors">
+                  {p.title}
+                </h4>
+                <p className="text-sm text-gray-500 mt-1">
+                  {p.subtitle}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
 
         {/* <div className="text-center mt-16">
           <Button size="lg" variant="outline">
