@@ -65,6 +65,18 @@ export function About() {
           </div>
         </div>
 
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {stats.map((stat, index) => (
+            <Card key={index} className="text-center">
+              <CardContent className="pt-6">
+                <stat.icon className="h-12 w-12 text-[#2527A9] mx-auto mb-4" />
+                <div className="text-3xl font-bold mb-2">{stat.number}</div>
+                <p className="text-muted-foreground">{stat.label}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
         {/* ===== Company History Section (Enhanced) ===== */}
         <section className="relative py-20 mt-10 bg-white">
           {/* Decorative Accent */}
@@ -197,19 +209,79 @@ export function About() {
           </div>
         </section>
 
+        {/* ===== Why Swift Build Section ===== */}
+        <section className="py-24 bg-white">
+          <div className="container px-8 lg:px-16">
+            <div className="text-center mb-16">
+              <Badge variant="secondary" className="mb-4">
+                {t("why.badge")}
+              </Badge>
+              <h2 className="text-4xl font-bold mb-6">
+                {t("why.title")}
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                {t("why.subtitle")}
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Card 1 */}
+              <Card className="hover:shadow-xl transition-shadow border border-gray-100">
+                <CardContent className="p-8 text-center">
+                  <Building2 className="h-12 w-12 text-[#2527A9] mx-auto mb-6" />
+                  <h3 className="text-xl font-bold mb-4">
+                    {t("why.reason1.title")}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t("why.reason1.desc")}
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Card 2 */}
+              <Card className="hover:shadow-xl transition-shadow border border-gray-100">
+                <CardContent className="p-8 text-center">
+                  <Users className="h-12 w-12 text-[#2527A9] mx-auto mb-6" />
+                  <h3 className="text-xl font-bold mb-4">
+                    {t("why.reason2.title")}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t("why.reason2.desc")}
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Card 3 */}
+              <Card className="hover:shadow-xl transition-shadow border border-gray-100">
+                <CardContent className="p-8 text-center">
+                  <Award className="h-12 w-12 text-[#2527A9] mx-auto mb-6" />
+                  <h3 className="text-xl font-bold mb-4">
+                    {t("why.reason3.title")}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t("why.reason3.desc")}
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Card 4 */}
+              <Card className="hover:shadow-xl transition-shadow border border-gray-100">
+                <CardContent className="p-8 text-center">
+                  <Clock className="h-12 w-12 text-[#2527A9] mx-auto mb-6" />
+                  <h3 className="text-xl font-bold mb-4">
+                    {t("why.reason4.title")}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {t("why.reason4.desc")}
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
 
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats.map((stat, index) => (
-            <Card key={index} className="text-center">
-              <CardContent className="pt-6">
-                <stat.icon className="h-12 w-12 text-[#2527A9] mx-auto mb-4" />
-                <div className="text-3xl font-bold mb-2">{stat.number}</div>
-                <p className="text-muted-foreground">{stat.label}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+
       </div>
     </section>
   );

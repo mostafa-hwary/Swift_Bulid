@@ -40,6 +40,16 @@ const translations = {
     'about.feature1': 'Strong internal coordination',
     'about.feature2': 'Specialized expertise',
     'about.feature3': 'Commitment to quality and timelines',
+
+    'about.stat1': '25+',
+    'about.stat1Label': 'Projects Completed',
+    'about.stat2': '30+',
+    'about.stat2Label': 'Expert Team Members',
+    'about.stat3': '12+',
+    'about.stat3Label': 'Years of Excellence',
+    'about.stat4': '24/7',
+    'about.stat4Label': 'Customer Support',
+
     'about.history.heading':'COMPANY HISTORY ',
     'about.history.summary':"Swift Build Contracting boasts a highly skilled team of management experts dedicated to meeting the growing demand for advisory services and urban market development by integrating global insights with local expertise. Our experienced team continuously evolves to serve our clients effectively, achieving notable distinction in the construction sector through sound concepts and practices. By successfully completing various construction projects, Swift Build has qualified to be among the leading contractors in the Kingdom. Our management and engineering staff possess a thorough understanding of market regulations and practical, academic, and field experience. Construction and infrastructure projects remain a top priority for Swift Build, supported by our commitment and capability to meet market needs and customer expectations regarding quality and standards. The mission of Swift Build's construction sector has been pivotal in driving urban renewal,contributing to the Kingdom's economic growth, and establishing a new era of modern urban development. We undertake large and medium-sized construction development projects across the Middle East and Saudi markets, providing integrated urban services with professionalism and adherence to international quality standards.",
     "about.history.highlight1": "Established in 2017 with a strong focus on construction and electromechanical works.",
@@ -48,21 +58,24 @@ const translations = {
    
     "about.visionMission.badge": "Our Direction",
     "about.visionMission.title": "Vision & Mission",
-
     "about.vision.title": "Our Vision",
     "about.vision.description": "To be one of the leading construction and electromechanical contractors in the region by delivering innovative, sustainable, and high-quality projects that contribute to modern urban development.",
-
     "about.mission.title": "Our Mission",
     "about.mission.description": "To deliver construction and infrastructure projects with professionalism, efficiency, and commitment to quality standards while meeting client expectations and supporting long-term development goals.",
+    
+    "why.badge": "Why Choose Us",
+    "why.title": "Why Swift Build",
+    "why.subtitle": "Trusted expertise, proven delivery, and a commitment to quality across every project.",
+    "why.reason1.title": "Industry Experience",
+    "why.reason1.desc": "Years of hands-on experience delivering construction and electromechanical projects across diverse sectors.",
+    "why.reason2.title": "Qualified Team",
+    "why.reason2.desc": "A highly skilled management and engineering team with deep market and regulatory knowledge.",
+    "why.reason3.title": "Quality Commitment",
+    "why.reason3.desc": "Strict adherence to international quality standards and best engineering practices.",
+    "why.reason4.title": "On-Time Delivery",
+    "why.reason4.desc": "Efficient project management ensuring timely delivery without compromising quality.",
 
-    'about.stat1': '30+',
-    'about.stat1Label': 'Projects Completed',
-    'about.stat2': '50+',
-    'about.stat2Label': 'Expert Team Members',
-    'about.stat3': '15+',
-    'about.stat3Label': 'Years of Excellence',
-    'about.stat4': '24/7',
-    'about.stat4Label': 'Customer Support',
+
     
     // Services
     'services.badge': 'Our Services',
@@ -367,29 +380,42 @@ const translations = {
     'about.feature1': 'تنسيق داخلي عالي',
     'about.feature2': 'خبرات متخصصة',
     'about.feature3': 'التزام بالجودة والمواعيد',
+
+    'about.stat1': '+25',
+    'about.stat1Label': 'مشروع مكتمل',
+    'about.stat2': '+30',
+    'about.stat2Label': 'عضو فريق خبير',
+    'about.stat3': '+12',
+    'about.stat3Label': 'سنة من التميز',
+    'about.stat4': '24/7',
+    'about.stat4Label': 'دعم العملاء',
+    
     "about.history.heading": "نبذة عن تاريخ الشركة",
     "about.history.summary": "تفخر شركة سويفت بيلد للمقاولات بامتلاك فريق إداري وهندسي عالي الكفاءة، يعمل على تلبية الطلب المتزايد على الخدمات الاستشارية وتطوير الأسواق العمرانية من خلال الدمج بين الخبرات العالمية والمعرفة المحلية. يواصل فريق العمل تطوير خبراته بشكل مستمر لخدمة عملائنا بكفاءة، مما مكّن الشركة من تحقيق مكانة متميزة في قطاع الإنشاءات عبر تطبيق مفاهيم وممارسات هندسية مدروسة. ومن خلال تنفيذ العديد من المشاريع الإنشائية بنجاح، استطاعت سويفت بيلد أن تكون ضمن نخبة شركات المقاولات في المملكة. يتمتع فريق الإدارة والهندسة بفهم عميق للأنظمة واللوائح، إضافة إلى خبرات عملية وأكاديمية وميدانية واسعة. وتُعد مشاريع الإنشاءات والبنية التحتية من أولويات الشركة، مدعومة بالقدرة والالتزام بتلبية متطلبات السوق وتوقعات العملاء من حيث الجودة والمعايير. وقد كان لدور قطاع الإنشاءات في سويفت بيلد أثر محوري في دعم التجديد العمراني، والمساهمة في النمو الاقتصادي للمملكة، وترسيخ مرحلة جديدة من التطوير الحضري الحديث. كما تنفذ الشركة مشاريع تطوير إنشائي متوسطة وكبيرة الحجم في أسواق المملكة والشرق الأوسط، مقدمة خدمات عمرانية متكاملة باحترافية ووفق أعلى معايير الجودة العالمية.",
     "about.history.highlight1": "تأسست الشركة عام 2017 مع تركيز قوي على أعمال الإنشاءات والإلكتروميكانيك.",
     "about.history.highlight2": "تنفيذ العديد من المشاريع الناجحة في المملكة العربية السعودية وأسواق الشرق الأوسط.",
     "about.history.highlight3": "اكتساب مكانة متقدمة ضمن شركات المقاولات الرائدة بفضل جودة التنفيذ.",
+    
     "about.visionMission.badge": "اتجاهنا",
     "about.visionMission.title": "الرؤية والرسالة",
-
     "about.vision.title": "رؤيتنا",
     "about.vision.description": "أن نكون من الشركات الرائدة في مجال الإنشاءات والأعمال الإلكتروميكانيكية من خلال تقديم مشاريع مبتكرة ومستدامة وعالية الجودة تساهم في تطوير العمران الحديث.",
-
     "about.mission.title": "رسالتنا",
     "about.mission.description": "تنفيذ مشاريع الإنشاءات والبنية التحتية باحترافية وكفاءة عالية، مع الالتزام بأعلى معايير الجودة وتلبية تطلعات العملاء ودعم أهداف التنمية طويلة المدى.",
-
-    'about.stat1': '+30',
-    'about.stat1Label': 'مشروع مكتمل',
-    'about.stat2': '+50',
-    'about.stat2Label': 'عضو فريق خبير',
-    'about.stat3': '+15',
-    'about.stat3Label': 'سنة من التميز',
-    'about.stat4': '24/7',
-    'about.stat4Label': 'دعم العملاء',
     
+    "why.badge": "لماذا سويفت بيلد",
+    "why.title": "لماذا تختار سويفت بيلد",
+    "why.subtitle": "خبرة موثوقة، تنفيذ احترافي، والتزام بالجودة في جميع مراحل المشروع.",
+    "why.reason1.title": "خبرة واسعة",
+    "why.reason1.desc": "سنوات من الخبرة العملية في تنفيذ مشاريع الإنشاءات والأعمال الإلكتروميكانيكية بمختلف القطاعات.",
+    "why.reason2.title": "فريق مؤهل",
+    "why.reason2.desc": "فريق إداري وهندسي عالي الكفاءة يمتلك معرفة عميقة بالأنظمة ومتطلبات السوق.",
+    "why.reason3.title": "التزام بالجودة",
+    "why.reason3.desc": "تطبيق أعلى معايير الجودة العالمية وأفضل الممارسات الهندسية في جميع المشاريع.",
+    "why.reason4.title": "الالتزام بالمواعيد",
+    "why.reason4.desc": "إدارة فعالة للمشاريع تضمن التسليم في الوقت المحدد دون التأثير على جودة التنفيذ.",
+
+
     // Services
     'services.badge': 'خدماتنا',
     'services.title': 'خدماتنا الأساسية',
