@@ -45,6 +45,15 @@ const translations = {
     "about.history.highlight1": "Established in 2017 with a strong focus on construction and electromechanical works.",
     "about.history.highlight2": "Successfully delivered multiple projects across Saudi Arabia and the Middle East.",
     "about.history.highlight3": "Recognized as one of the leading contractors through quality-driven execution.",
+   
+    "about.visionMission.badge": "Our Direction",
+    "about.visionMission.title": "Vision & Mission",
+
+    "about.vision.title": "Our Vision",
+    "about.vision.description": "To be one of the leading construction and electromechanical contractors in the region by delivering innovative, sustainable, and high-quality projects that contribute to modern urban development.",
+
+    "about.mission.title": "Our Mission",
+    "about.mission.description": "To deliver construction and infrastructure projects with professionalism, efficiency, and commitment to quality standards while meeting client expectations and supporting long-term development goals.",
 
     'about.stat1': '30+',
     'about.stat1Label': 'Projects Completed',
@@ -363,6 +372,14 @@ const translations = {
     "about.history.highlight1": "تأسست الشركة عام 2017 مع تركيز قوي على أعمال الإنشاءات والإلكتروميكانيك.",
     "about.history.highlight2": "تنفيذ العديد من المشاريع الناجحة في المملكة العربية السعودية وأسواق الشرق الأوسط.",
     "about.history.highlight3": "اكتساب مكانة متقدمة ضمن شركات المقاولات الرائدة بفضل جودة التنفيذ.",
+    "about.visionMission.badge": "اتجاهنا",
+    "about.visionMission.title": "الرؤية والرسالة",
+
+    "about.vision.title": "رؤيتنا",
+    "about.vision.description": "أن نكون من الشركات الرائدة في مجال الإنشاءات والأعمال الإلكتروميكانيكية من خلال تقديم مشاريع مبتكرة ومستدامة وعالية الجودة تساهم في تطوير العمران الحديث.",
+
+    "about.mission.title": "رسالتنا",
+    "about.mission.description": "تنفيذ مشاريع الإنشاءات والبنية التحتية باحترافية وكفاءة عالية، مع الالتزام بأعلى معايير الجودة وتلبية تطلعات العملاء ودعم أهداف التنمية طويلة المدى.",
 
     'about.stat1': '+30',
     'about.stat1Label': 'مشروع مكتمل',

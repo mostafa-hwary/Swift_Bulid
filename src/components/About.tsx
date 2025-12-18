@@ -121,6 +121,81 @@ export function About() {
           </div>
         </section>
 
+        {/* ===== Vision & Mission Section ===== */}
+        <section className="py-24 bg-gray-50">
+          <div className="container px-8 lg:px-16">
+            <div className="text-center mb-16">
+              <Badge variant="secondary" className="mb-4">
+                {t("about.visionMission.badge")}
+              </Badge>
+              <h2 className="text-4xl font-bold">
+                {t("about.visionMission.title")}
+              </h2>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12">
+              {/* Vision Card */}
+              <Card className="shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                <CardContent className="p-10">
+                  <div
+                    className={`flex items-center mb-6 ${
+                      isRTL ? "flex-row-reverse" : ""
+                    }`}
+                  >
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#2527A9]/10 text-[#2527A9] font-bold text-xl">
+                      👁️
+                    </div>
+                    <h3
+                      className={`text-2xl font-bold ${
+                        isRTL ? "mr-4 text-right" : "ml-4 text-left"
+                      }`}
+                    >
+                      {t("about.vision.title")}
+                    </h3>
+                  </div>
+
+                  <p
+                    className={`text-lg text-muted-foreground leading-relaxed ${
+                      isRTL ? "text-right" : "text-left"
+                    }`}
+                  >
+                    {t("about.vision.description")}
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Mission Card */}
+              <Card className="shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                <CardContent className="p-10">
+                  <div
+                    className={`flex items-center mb-6 ${
+                      isRTL ? "flex-row-reverse" : ""
+                    }`}
+                  >
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#2527A9]/10 text-[#2527A9] font-bold text-xl">
+                      🎯
+                    </div>
+                    <h3
+                      className={`text-2xl font-bold ${
+                        isRTL ? "mr-4 text-right" : "ml-4 text-left"
+                      }`}
+                    >
+                      {t("about.mission.title")}
+                    </h3>
+                  </div>
+
+                  <p
+                    className={`text-lg text-muted-foreground leading-relaxed ${
+                      isRTL ? "text-right" : "text-left"
+                    }`}
+                  >
+                    {t("about.mission.description")}
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
 
 
 
