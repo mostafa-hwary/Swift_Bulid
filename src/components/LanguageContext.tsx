@@ -75,8 +75,12 @@ const translations = {
     "why.reason4.title": "On-Time Delivery",
     "why.reason4.desc": "Efficient project management ensuring timely delivery without compromising quality.",
 
+    // "cta.title": "Ready to Start Your Project?",
+    // "cta.subtitle": "Let our experienced team help you deliver your next construction or electromechanical project with confidence and quality.",
+    // "cta.primary": "Start Your Project",
+    // "cta.secondary": "View Our Projects",
 
-    
+  
     // Services
     'services.badge': 'Our Services',
     'services.title': 'Core Services',
@@ -414,6 +418,11 @@ const translations = {
     "why.reason3.desc": "تطبيق أعلى معايير الجودة العالمية وأفضل الممارسات الهندسية في جميع المشاريع.",
     "why.reason4.title": "الالتزام بالمواعيد",
     "why.reason4.desc": "إدارة فعالة للمشاريع تضمن التسليم في الوقت المحدد دون التأثير على جودة التنفيذ.",
+
+    // "cta.title": "هل أنت مستعد لبدء مشروعك؟",
+    // "cta.subtitle": "فريقنا المتخصص جاهز لدعمك في تنفيذ مشروعك الإنشائي أو الإلكتروميكانيكي بأعلى مستويات الجودة والاحترافية.",
+    // "cta.primary": "ابدأ مشروعك",
+    // "cta.secondary": "استعرض مشاريعنا",
 
 
     // Services

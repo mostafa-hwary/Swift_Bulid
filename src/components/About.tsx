@@ -226,7 +226,7 @@ export function About() {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Card 1 */}
-              <Card className="hover:shadow-xl transition-shadow border border-gray-100">
+              <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
                 <CardContent className="p-8 text-center">
                   <Building2 className="h-12 w-12 text-[#2527A9] mx-auto mb-6" />
                   <h3 className="text-xl font-bold mb-4">
@@ -239,7 +239,7 @@ export function About() {
               </Card>
 
               {/* Card 2 */}
-              <Card className="hover:shadow-xl transition-shadow border border-gray-100">
+              <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
                 <CardContent className="p-8 text-center">
                   <Users className="h-12 w-12 text-[#2527A9] mx-auto mb-6" />
                   <h3 className="text-xl font-bold mb-4">
@@ -252,7 +252,7 @@ export function About() {
               </Card>
 
               {/* Card 3 */}
-              <Card className="hover:shadow-xl transition-shadow border border-gray-100">
+              <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
                 <CardContent className="p-8 text-center">
                   <Award className="h-12 w-12 text-[#2527A9] mx-auto mb-6" />
                   <h3 className="text-xl font-bold mb-4">
@@ -265,7 +265,7 @@ export function About() {
               </Card>
 
               {/* Card 4 */}
-              <Card className="hover:shadow-xl transition-shadow border border-gray-100">
+              <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
                 <CardContent className="p-8 text-center">
                   <Clock className="h-12 w-12 text-[#2527A9] mx-auto mb-6" />
                   <h3 className="text-xl font-bold mb-4">
@@ -279,6 +279,54 @@ export function About() {
             </div>
           </div>
         </section>
+
+        {/* ===== CTA Section ===== */}
+        {/* <section className="py-20 bg-[#2527A9] text-white relative overflow-hidden">
+          {/* subtle background pattern */}
+          {/* <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top,_white,_transparent_60%)]"></div>
+
+          <div className="relative container px-8 lg:px-16 text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              {t("cta.title")}
+            </h2>
+
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-10">
+              {t("cta.subtitle")}
+            </p>
+
+            <div className="flex justify-center gap-4 flex-wrap">
+              <a href="#contact">
+                <button
+                  className="
+                    bg-white text-[#2527A9] font-semibold
+                    px-8 py-4 rounded-lg
+                    hover:bg-gray-100
+                    hover:-translate-y-1
+                    transition-all duration-300
+                    shadow-lg
+                  "
+                >
+                  {t("cta.primary")}
+                </button>
+              </a>
+
+              <a href="#projects">
+                <button
+                  className="
+                    border border-white/60 text-white
+                    px-8 py-4 rounded-lg
+                    hover:bg-white/10
+                    hover:-translate-y-1
+                    transition-all duration-300
+                  "
+                >
+                  {t("cta.secondary")}
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+ */} 
 
 
 

@@ -115,7 +115,7 @@ export default function ServicesDetails() {
           onClick={() => navigate(-1)}
         >
 
-          ← {t("services.back")}
+          {isArabic ? "→ " + t("services.back") : "← " + t("services.back")}
         </Button>
 
         <div className="flex flex-col lg:flex-row items-center gap-20 bg-white rounded-3xl shadow-2xl overflow-hidden">
