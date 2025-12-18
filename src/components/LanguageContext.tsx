@@ -239,8 +239,8 @@ const translations = {
     "projects.ababitin.scope.HighInteriorFinishing": "High Interior Finishing  - Walls: Decorative plaster, paint, and luxury wall coverings. - Ceilings: False ceilings with gypsum board, recessed lighting, and decorative moldings. - Staircases: Steel or concrete base with premium handrails and balustrades.",
     "projects.ababitin.scope.ElectricalWorks": "Electrical Works - Complete wiring and cabling for lighting, power, and appliances. - Installation of switches, sockets, distribution boards, and circuit breakers. - Provision of luxury lighting fixtures, chandeliers, and smart control systems. - Testing and commissioning to ensure safety and",
     "projects.ababitin.scope.PlumbingWorks": " Plumbing Works - Installation of water supply lines, drainage systems, and sanitary fixtures. - Provision of hot and cold-water piping with proper insulation. - Installation of bathroom fittings, kitchen sinks, and water heaters. - Testing for leaks, pressure, and flow.",
-    "projects.ababitin.scope.ExteriorWorks ": "Exterior Works Exterior Works - Boundary walls and gates. - Landscaping, walkways, and outdoor lighting. - Parking areas and paving. ",
-    "projects.ababitin.scope.Safety&Compliance ": "Safety & Compliance   - Fire-rated doors and emergency systems. - Compliance with Saudi building codes and international standards.  ",
+    "projects.ababitin.scope.ExteriorWorks": "Exterior Works Exterior Works - Boundary walls and gates. - Landscaping, walkways, and outdoor lighting. - Parking areas and paving. ",
+    "projects.ababitin.scope.Safety&Compliance": "Safety & Compliance   - Fire-rated doors and emergency systems. - Compliance with Saudi building codes and international standards.  ",
 
     "projects.shiblan.title": "Electromechanical Works for Al Shiblan Mall",
     "projects.shiblan.desc": "Execution of electromechanical works for Al Shiblan Mall in North Khobar.",
@@ -613,8 +613,8 @@ const translations = {
     "projects.ababitin.scope.HighInteriorFinishing": "التشطيبات الداخلية الفاخرة – الحوائط: محارة ديكورية، دهانات، وكسوات حائط فاخرة. – الأسقف: أسقف مستعارة بالجبس بورد مع إضاءة مخفية وكرانيش زخرفية. – السلالم: هياكل معدنية أو خرسانية مع درابزينات عالية الجودة.",
     "projects.ababitin.scope.ElectricalWorks": "الأعمال الكهربائية – تمديدات كاملة للإضاءة والقوى والأجهزة. – تركيب المفاتيح، البرايز، لوحات التوزيع، والقواطع. – توريد وتركيب وحدات إضاءة فاخرة، نجف، وأنظمة تحكم ذكية. – الاختبار والتشغيل لضمان السلامة.",
     "projects.ababitin.scope.PlumbingWorks": "أعمال السباكة – تركيب شبكات تغذية المياه والصرف الصحي والأدوات الصحية. – تمديد مواسير المياه الساخنة والباردة مع العزل المناسب. – تركيب خلاطات الحمامات، أحواض المطابخ، وسخانات المياه. – اختبار التسريبات والضغط ومعدلات التدفق.",
-    "projects.ababitin.scope.ExteriorWorks ": "الأعمال الخارجية – أسوار وبوابات خارجية. – تنسيق الموقع العام والممرات والإضاءة الخارجية. – مناطق انتظار السيارات وأعمال الرصف.",
-    "projects.ababitin.scope.Safety&Compliance ": "السلامة والالتزام – أبواب مقاومة للحريق وأنظمة الطوارئ. – الالتزام بكود البناء السعودي والمعايير الدولية.",
+    "projects.ababitin.scope.ExteriorWorks": "الأعمال الخارجية – أسوار وبوابات خارجية. – تنسيق الموقع العام والممرات والإضاءة الخارجية. – مناطق انتظار السيارات وأعمال الرصف.",
+    "projects.ababitin.scope.Safety&Compliance": "السلامة والالتزام – أبواب مقاومة للحريق وأنظمة الطوارئ. – الالتزام بكود البناء السعودي والمعايير الدولية.",
 
     "projects.shiblan.title": "أعمال الإلكتروميكانيك لمول الشبلان",
     "projects.shiblan.desc": "تنفيذ أعمال الإلكتروميكانيك في مشروع مول الشبلان بالخبر الشمالية.",

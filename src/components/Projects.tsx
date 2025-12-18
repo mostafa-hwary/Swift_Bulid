@@ -17,7 +17,7 @@ export function Projects() {
     {
       id: 1,
       title: t("projects.luxury.title"),
-      category: "Residential",
+      category: t("projects.categoryResidential"),
       description: t("projects.luxury.desc"),
       image:
         "https://6931a2ad06de332fac041a47.imgix.net/1-villa_300_riyadh_paramo_arquitectos.jpg?auto=format&fit=crop&w=1080&q=80",
@@ -27,7 +27,7 @@ export function Projects() {
     {
       id: 2,
       title: t("projects.corporate.title"),
-      category: "Commercial",
+      category: t("projects.categoryCommercial"),
       description: t("projects.corporate.desc"),
       image:
         "https://6931a2ad06de332fac041a47.imgix.net/Corporate%20Headquarters.webp?auto=format&fit=crop&w=1080&q=80",
@@ -37,7 +37,7 @@ export function Projects() {
     {
       id: 3,
       title: t("projects.manufacturing.title"),
-      category: "Industrial",
+      category: t("projects.categoryIndustrial"),
       description: t("projects.manufacturing.desc"),
       image:
         "https://images.unsplash.com/photo-1684497404598-6e844dff9cde?auto=format&fit=crop&w=1080&q=80",
@@ -49,7 +49,7 @@ export function Projects() {
     {
       id: 4,
       title: t("projects.benzaghr.title"),
-      category: 'Electromechanical',
+      category: t('projects.categoryElectromechanical'),
       description: t("projects.benzaghr.desc"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/benzaghr.jpg", // ضع رابط الصورة الصحيح
       status: t("projects.completed"),
@@ -58,7 +58,7 @@ export function Projects() {
     {
       id: 5,
       title: t("projects.ababitin.title"),
-      category: 'Electromechanical',
+      category: t('projects.categoryElectromechanical'),
       description: t("projects.ababitin.desc"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/ababitin.jpg",
       status: t("projects.completed"),
@@ -67,7 +67,7 @@ export function Projects() {
     {
       id: 6,
       title: t("projects.shiblan.title"),
-      category: 'Electromechanical',
+      category: t('projects.categoryElectromechanical'),
       description: t("projects.shiblan.desc"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/shiblan.jpg",
       status: t("projects.completed"),
@@ -76,7 +76,7 @@ export function Projects() {
     {
       id: 7,
       title: t("projects.hayatFinishes.title"),
-      category: 'Finishing Works',
+      category: t('projects.categoryFinishing'),
       description: t("projects.hayatFinishes.desc"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/hayat-finishes.jpg",
       status: t("projects.completed"),
@@ -85,7 +85,7 @@ export function Projects() {
     {
       id: 8,
       title: t("projects.rakahUnits.title"),
-      category: 'Electromechanical',
+      category: t('projects.categoryElectromechanical'),
       description: t("projects.rakahUnits.desc"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/rakah-units.jpg",
       status: t("projects.completed"),
@@ -94,7 +94,7 @@ export function Projects() {
     {
       id: 9,
       title: t("projects.DhahranTechnoValley.title"),
-      category: 'Electromechanical',
+      category: t('projects.categoryElectroFinish'),
       description: t("projects.DhahranTechnoValley.desc"),
       image: "https://images.squarespace-cdn.com/content/68b42a6652beeb56115c1967/1756637809063-3TK6P9SIR1Z4908ZN1ZL/Asset+1.png?content-type=image%2Fpng",
       status: t("projects.completed"),
@@ -103,7 +103,7 @@ export function Projects() {
     {
       id: 10,
       title: t("projects.Halliburton.title"),
-      category: 'Electromechanical',
+      category: t('projects.categoryFinishing'),
       description: t("projects.Halliburton.desc"),
       image: "https://cdn.brandfolder.io/3I2CY2XL/as/vkc5w586w5gtr898396p3w/halliburton-logo.svg",
       status: t("projects.completed"),
@@ -112,7 +112,7 @@ export function Projects() {
         {
       id: 11,
       title: t("projects.Pepsico.title"),
-      category: 'Electromechanical',
+      category: t('projects.categoryFinishing'),
       description: t("projects.Pepsico.desc"),
       image: "https://digitalassets.pepsico.com/transform/fe5c5aad-b8cd-4dd5-a1b2-d79302ff1f1c/PepsiCo-Logo-header?w=2048&q=75 1x, https://digitalassets.pepsico.com/transform/fe5c5aad-b8cd-4dd5-a1b2-d79302ff1f1c/PepsiCo-Logo-header?w=3840&q=75 2x",
       status: t("projects.completed"),
