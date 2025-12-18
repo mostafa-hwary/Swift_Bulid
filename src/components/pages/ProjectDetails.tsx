@@ -232,7 +232,7 @@ export default function ProjectDetails() {
         t("projects.DhahranTechnoValley.scope.StairHandrails"),
         t("projects.DhahranTechnoValley.scope.ElectricalGratings"),
         t("projects.DhahranTechnoValley.scope.MonkeyLadder"),
-        t("projects.DhahranTechnoValley.scope.Finishing&Compliance "),
+        t("projects.DhahranTechnoValley.scope.Finishing&Compliance"),
       ],
       challenges: t("projects.DhahranTechnoValley.challenges"),
       results: t("projects.DhahranTechnoValley.results"),
