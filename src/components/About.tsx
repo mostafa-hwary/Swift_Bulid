@@ -65,6 +65,65 @@ export function About() {
           </div>
         </div>
 
+        {/* ===== Company History Section (Enhanced) ===== */}
+        <section className="relative py-20 mt-10 bg-white">
+          {/* Decorative Accent */}
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="w-full h-full bg-gradient-to-b from-transparent via-[#2527A9]/5 to-transparent"></div>
+          </div>
+
+          <div className="relative container px-8 lg:px-16">
+            <Card className="overflow-hidden shadow-xl border border-gray-100">
+              {/* Top Accent */}
+              <div className="h-1 bg-[#2527A9]" />
+
+              <CardContent className="p-10 lg:p-14">
+                <div
+                  className={`mb-8 ${
+                    isRTL ? "text-right" : "text-left"
+                  }`}
+                >
+                  <Badge variant="secondary" className="mb-4">
+                    {t("about.badge")}
+                  </Badge>
+
+                  <h3 className="text-3xl lg:text-4xl font-bold text-[#2527A9]">
+                    {t("about.history.heading")}
+                  </h3>
+                </div>
+
+                <p
+                  className={`text-lg leading-relaxed text-muted-foreground mb-12 ${
+                    isRTL ? "text-right" : "text-left"
+                  }`}
+                >
+                  {t("about.history.summary")}
+                </p>
+
+                {/* Highlights */}
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {[1, 2, 3].map((i) => (
+                    <div
+                      key={i}
+                      className={`flex items-start gap-4 ${
+                        isRTL ? "flex-row-reverse text-right" : ""
+                      }`}
+                    >
+                      <div className="flex-shrink-0 w-3 h-3 mt-2 rounded-full bg-[#2527A9]" />
+                      <span className="text-muted-foreground text-base">
+                        {t(`about.history.highlight${i}`)}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+
+
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <Card key={index} className="text-center">
