@@ -53,7 +53,7 @@ export function Projects() {
       description: t("projects.benzaghr.desc"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/benzaghr.jpg", // ضع رابط الصورة الصحيح
       status: t("projects.completed"),
-      year: "2022",
+      year: "2025",
     },
     {
       id: 5,
@@ -62,7 +62,7 @@ export function Projects() {
       description: t("projects.ababitin.desc"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/ababitin.jpg",
       status: t("projects.completed"),
-      year: "2019",
+      year: "2023",
     },
     {
       id: 6,
@@ -89,7 +89,34 @@ export function Projects() {
       description: t("projects.rakahUnits.desc"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/rakah-units.jpg",
       status: t("projects.completed"),
-      year: "2020",
+      year: "2024",
+    },
+    {
+      id: 9,
+      title: t("projects.DhahranTechnoValley.title"),
+      category: 'Electromechanical',
+      description: t("projects.DhahranTechnoValley.desc"),
+      image: "https://images.squarespace-cdn.com/content/68b42a6652beeb56115c1967/1756637809063-3TK6P9SIR1Z4908ZN1ZL/Asset+1.png?content-type=image%2Fpng",
+      status: t("projects.completed"),
+      year: "2017",
+    },
+    {
+      id: 10,
+      title: t("projects.Halliburton.title"),
+      category: 'Electromechanical',
+      description: t("projects.Halliburton.desc"),
+      image: "https://cdn.brandfolder.io/3I2CY2XL/as/vkc5w586w5gtr898396p3w/halliburton-logo.svg",
+      status: t("projects.completed"),
+      year: "2013",
+    },
+        {
+      id: 11,
+      title: t("projects.Pepsico.title"),
+      category: 'Electromechanical',
+      description: t("projects.Pepsico.desc"),
+      image: "https://digitalassets.pepsico.com/transform/fe5c5aad-b8cd-4dd5-a1b2-d79302ff1f1c/PepsiCo-Logo-header?w=2048&q=75 1x, https://digitalassets.pepsico.com/transform/fe5c5aad-b8cd-4dd5-a1b2-d79302ff1f1c/PepsiCo-Logo-header?w=3840&q=75 2x",
+      status: t("projects.completed"),
+      year: "2014",
     },
   ];
     const compactProjects = [
@@ -158,10 +185,11 @@ export function Projects() {
               {/* Image */}
               <div className="relative w-full aspect-[4/3] overflow-hidden">
                 <ImageWithFallback
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-contain p-4 transition-transform duration-500 hover:scale-105"
+                    />
+
 
                 {/* Status Badge */}
                 <div className={`absolute top-4 ${isRTL ? "right-4" : "left-4"}`}>

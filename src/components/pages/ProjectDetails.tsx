@@ -7,39 +7,44 @@ import "../../index.css";
 
 /**
  * ResponsiveImg
- * - يولّد srcSet إذا كان مصدر الصورة يدعم params (imgix / unsplash / cloudinary / imgix-like).
- * - يضع fallback image عند حدوث خطأ.
- * - wrapperClass يتحكم بنسبة العرض (aspect) مثل "aspect-video" أو "aspect-[4/3]".
+ * - لا يفرض object-fit
+ * - التحكم الكامل من خلال imgClass
  */
-function ResponsiveImg({ src, alt, wrapperClass = "aspect-[4/3]", imgClass = "", fallback }: { src: string; alt: string; wrapperClass?: string; imgClass?: string; fallback?: string }) {
-  // small safe fallback
-  const fallbackImg = fallback || "https://via.placeholder.com/1600x1200.png?text=No+Image";
+function ResponsiveImg({
+  src,
+  alt,
+  wrapperClass = "aspect-[4/3]",
+  imgClass = "",
+  fallback,
+}: {
+  src: string;
+  alt: string;
+  wrapperClass?: string;
+  imgClass?: string;
+  fallback?: string;
+}) {
+  const fallbackImg =
+    fallback || "https://via.placeholder.com/1600x1200.png?text=No+Image";
 
-  // helper to build an URL with width param (works for imgix/unsplash/cloudinary-style)
   const makeSrc = (url: string, w: number) => {
     if (!url) return url;
-    // if URL already has query params, append; otherwise add
     if (url.includes("?")) {
-      // ensure w param exists or add it
       if (/([\?&])w=\d+/.test(url)) {
         return url.replace(/([\?&]w=)\d+/, `$1${w}`);
-      } else {
-        return `${url}&w=${w}&auto=format&fit=crop&q=80`;
       }
-    } else {
-      return `${url}?w=${w}&auto=format&fit=crop&q=80`;
+      return `${url}&w=${w}&auto=format&fit=crop&q=80`;
     }
+    return `${url}?w=${w}&auto=format&fit=crop&q=80`;
   };
 
-  // detect if the host likely supports dynamic resizing
-  const supportsAutoSizing = /imgix|unsplash|cloudinary|akamaized|imgur|pixabay/i.test(src);
+  const supportsAutoSizing =
+    /imgix|unsplash|cloudinary|akamaized|imgur|pixabay/i.test(src);
 
   const widths = [480, 768, 1024, 1366, 1600];
   const srcSet = supportsAutoSizing
     ? widths.map((w) => `${makeSrc(src, w)} ${w}w`).join(", ")
     : undefined;
 
-  // default src to a reasonable width
   const defaultSrc = supportsAutoSizing ? makeSrc(src, 1200) : src || fallbackImg;
 
   return (
@@ -51,9 +56,11 @@ function ResponsiveImg({ src, alt, wrapperClass = "aspect-[4/3]", imgClass = "",
         alt={alt}
         loading="lazy"
         onError={(e) => {
-          if (e.currentTarget.src !== fallbackImg) e.currentTarget.src = fallbackImg;
+          if (e.currentTarget.src !== fallbackImg) {
+            e.currentTarget.src = fallbackImg;
+          }
         }}
-        className={`w-full h-full object-cover object-center ${imgClass}`}
+        className={`w-full h-full object-center ${imgClass}`}
       />
     </div>
   );
@@ -132,11 +139,10 @@ export default function ProjectDetails() {
       year: "2024",
       overview: t("projects.benzaghr.overview"),
       scope: [
-        t("projects.benzaghr.scope.design"),
-        t("projects.benzaghr.scope.mep"),
-        t("projects.benzaghr.scope.commissioning"),
-        t("projects.benzaghr.scope.safety"),
-        t("projects.benzaghr.scope.procurement"),
+        t("projects.benzaghr.scope.PowerDistribution"),
+        t("projects.benzaghr.scope.LightingSystems"),
+        t("projects.benzaghr.scope.SafetyControl"),
+        t("projects.benzaghr.scope.AuxiliaryInstallations"),
       ],
       challenges: t("projects.benzaghr.challenges"),
       results: t("projects.benzaghr.results"),
@@ -150,11 +156,12 @@ export default function ProjectDetails() {
       year: "2024",
       overview: t("projects.ababitin.overview"),
       scope: [
-        t("projects.ababitin.scope.mep"),
-        t("projects.ababitin.scope.interiors"),
-        t("projects.ababitin.scope.installation"),
-        t("projects.ababitin.scope.coordination"),
-        t("projects.ababitin.scope.warranty"),
+        t("projects.ababitin.scope.CivilWorks"),
+        t("projects.ababitin.scope.HighInteriorFinishing"),
+        t("projects.ababitin.scope.ElectricalWorks"),
+        t("projects.ababitin.scope.PlumbingWorks"),
+        t("projects.ababitin.scope.ExteriorWorks"),
+        t("projects.ababitin.scope.Safety&Compliance")
       ],
       challenges: t("projects.ababitin.challenges"),
       results: t("projects.ababitin.results"),
@@ -186,10 +193,11 @@ export default function ProjectDetails() {
       year: "2024",
       overview: t("projects.hayatFinishes.overview"),
       scope: [
-        t("projects.hayatFinishes.scope.finishings"),
-        t("projects.hayatFinishes.scope.quality"),
-        t("projects.hayatFinishes.scope.procurement"),
-        t("projects.hayatFinishes.scope.inspection"),
+        t("projects.hayatFinishes.scope.CivilWorks"),
+        t("projects.hayatFinishes.scope.HighInteriorFinishing"),
+        t("projects.hayatFinishes.scope.ElectricalWorks"),
+        t("projects.hayatFinishes.scope.ExteriorWorks"),
+        t("projects.hayatFinishes.scope.PlumbingWorks"),
       ],
       challenges: t("projects.hayatFinishes.challenges"),
       results: t("projects.hayatFinishes.results"),
@@ -212,15 +220,68 @@ export default function ProjectDetails() {
       challenges: t("projects.rakahUnits.challenges"),
       results: t("projects.rakahUnits.results"),
     },
+        {
+      id: 9,
+      title: t("projects.DhahranTechnoValley.title"),
+      category: t("projects.categoryElectroFinish"),
+      image: "https://images.squarespace-cdn.com/content/68b42a6652beeb56115c1967/1756637809063-3TK6P9SIR1Z4908ZN1ZL/Asset+1.png?content-type=image%2Fpng",
+      status: t("projects.completed"),
+      year: "2024",
+      overview: t("projects.DhahranTechnoValley.overview"),
+      scope: [
+        t("projects.DhahranTechnoValley.scope.StairHandrails"),
+        t("projects.DhahranTechnoValley.scope.ElectricalGratings"),
+        t("projects.DhahranTechnoValley.scope.MonkeyLadder"),
+        t("projects.DhahranTechnoValley.scope.Finishing&Compliance "),
+      ],
+      challenges: t("projects.DhahranTechnoValley.challenges"),
+      results: t("projects.DhahranTechnoValley.results"),
+    },
+      {
+      id: 10,
+      title: t("projects.Halliburton.title"),
+      category: t("projects.categoryElectroFinish"),
+      image: "https://cdn.brandfolder.io/3I2CY2XL/as/vkc5w586w5gtr898396p3w/halliburton-logo.svg",
+      status: t("projects.completed"),
+      year: "2024",
+      overview: t("projects.Halliburton.overview"),
+      scope: [
+        t("projects.Halliburton.scope.SlidingGates"),
+        t("projects.Halliburton.scope.PerimeterFence"),
+        t("projects.Halliburton.scope.AccessStructures"),
+        t("projects.Halliburton.scope.Doors"),
+      ],
+      challenges: t("projects.Halliburton.challenges"),
+      results: t("projects.Halliburton.results"),
+    },
+      {
+      id: 11,
+      title: t("projects.Pepsico.title"),
+      category: t("projects.categoryElectroFinish"),
+      image: "https://digitalassets.pepsico.com/transform/fe5c5aad-b8cd-4dd5-a1b2-d79302ff1f1c/PepsiCo-Logo-header?w=2048&q=75 1x, https://digitalassets.pepsico.com/transform/fe5c5aad-b8cd-4dd5-a1b2-d79302ff1f1c/PepsiCo-Logo-header?w=3840&q=75 2x",
+      status: t("projects.completed"),
+      year: "2024",
+      overview: t("projects.Pepsico.overview"),
+      scope: [
+        t("projects.Pepsico.scope.Doors"),
+        t("projects.Pepsico.scope.MonkeyLadders"),
+        t("projects.Pepsico.scope.Gates"),
+        t("projects.Pepsico.scope.Turnstiles"),
+        t("projects.Pepsico.scope.Finishing&Compliance"),
+      ],
+      challenges: t("projects.Pepsico.challenges"),
+      results: t("projects.Pepsico.results"),
+    },
+  
   ];
 
-  const project = projects.find((p) => p.id === Number(id));
+ const project = projects.find((p) => p.id === Number(id));
 
   if (!project) {
     return (
       <div className="container text-center py-20">
         <h2 className="text-2xl font-bold text-gray-600">
-          {t("projects.notFound") || (isArabic ? "المشروع غير موجود" : "Project not found")}
+          {isArabic ? "المشروع غير موجود" : "Project not found"}
         </h2>
       </div>
     );
@@ -228,9 +289,11 @@ export default function ProjectDetails() {
 
   return (
     <section
-      className={`bg-gray-50 min-h-screen pb-24 ${isArabic ? "font-[Cairo] text-right" : "text-left"}`}
+      className={`bg-gray-50 min-h-screen pb-24 ${
+        isArabic ? "font-[Cairo] text-right" : "text-left"
+      }`}
     >
-      {/* ===== HERO SECTION (16:9) ===== */}
+      {/* ===== HERO ===== */}
       <motion.div
         initial={{ opacity: 0, scale: 1.03 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -240,128 +303,93 @@ export default function ProjectDetails() {
         <ResponsiveImg
           src={project.image}
           alt={project.title}
-          wrapperClass="w-full aspect-video"
-          imgClass="transition-transform duration-700 hover:scale-105"
-          fallback="https://via.placeholder.com/1600x900.png?text=No+Image"
+          wrapperClass="w-full aspect-[4/3]"
+          imgClass="object-contain p-10"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-10 md:p-20 text-white">
-          <motion.h1
-            initial={{ y: 40, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-4xl md:text-5xl font-extrabold tracking-tight drop-shadow-lg"
-          >
+          <h1 className="text-4xl md:text-5xl font-extrabold">
             {project.title}
-          </motion.h1>
+          </h1>
+
           <div className="flex flex-wrap gap-3 mt-6">
-            <Badge className="bg-[#2527A9] text-white">{project.category}</Badge>
-            <Badge variant="outline" className="bg-white text-black font-medium">
+            <Badge className="bg-[#2527A9] text-white">
+              {project.category}
+            </Badge>
+            <Badge variant="outline" className="bg-white text-black">
               {project.year}
             </Badge>
-            <Badge
-              className={`text-white font-semibold ${
-                project.status === t("projects.completed")
-                  ? "bg-green-600"
-                  : "bg-yellow-500"
-              }`}
-            >
+            <Badge className="bg-green-600 text-white">
               {project.status}
             </Badge>
           </div>
         </div>
       </motion.div>
 
-      {/* ===== CONTENT SECTION ===== */}
+      {/* ===== CONTENT ===== */}
       <div className="container mx-auto px-6 md:px-12 lg:px-20 mt-16 space-y-16">
         <Button
           onClick={() => navigate(-1)}
-          className="bg-[#2527A9] text-white hover:bg-[#1e1f8a]"
+          className="bg-[#2527A9] text-white"
         >
-          {isArabic ? "← " + t("projects.back") : t("projects.back") + " →"}
+          {isArabic ? "رجوع" : "Back"}
         </Button>
 
-        {/* Overview Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="grid md:grid-cols-2 gap-10 items-center"
-        >
+        {/* Overview */}
+        <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-3xl font-semibold text-[#2527A9] mb-4">
-              {t("projects.overview") || (isArabic ? "نظرة عامة" : "Overview")}
+              {t("projects.overview")}
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              {project.overview}
-            </p>
+            <p className="text-lg text-gray-700">{project.overview}</p>
           </div>
 
-          {/* Secondary image (4:3) */}
           <ResponsiveImg
             src={project.image}
             alt={project.title}
-            wrapperClass="w-full aspect-[4/3] rounded-2xl overflow-hidden"
-            imgClass="rounded-2xl shadow-md"
-            fallback="https://via.placeholder.com/1200x900.png?text=No+Image"
+            wrapperClass="w-full aspect-[4/3] rounded-2xl"
+            imgClass="object-contain p-8 rounded-2xl"
           />
-        </motion.div>
+        </div>
 
-        {/* Scope of Work Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="bg-white p-10 rounded-2xl shadow-md border border-gray-100"
-        >
+        {/* Scope */}
+        <div className="bg-white p-10 rounded-2xl shadow-md">
           <h2 className="text-3xl font-semibold text-[#2527A9] mb-6">
-            {t("projects.scopeOfWork") || (isArabic ? "نطاق العمل" : "Scope of Work")}
+            {t("projects.scopeOfWork")}
           </h2>
-          <ul className="list-disc pl-6 text-lg text-gray-700 space-y-3">
-            {project.scope.map((item, index) => (
-              <li key={index}>{item}</li>
+          <ul className="list-disc pl-6 space-y-3 text-lg text-gray-700">
+            {project.scope.map((item, i) => (
+              <li key={i}>{item}</li>
             ))}
           </ul>
-        </motion.div>
+        </div>
 
-        {/* Challenges Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="grid md:grid-cols-2 gap-10 items-center"
-        >
+        {/* Challenges */}
+        <div className="grid md:grid-cols-2 gap-10 items-center">
           <ResponsiveImg
             src={project.image}
-            alt="Challenges"
-            wrapperClass="w-full aspect-[4/3] rounded-2xl overflow-hidden"
-            imgClass="rounded-2xl shadow-md"
-            fallback="https://via.placeholder.com/1200x900.png?text=No+Image"
+            alt={project.title}
+            wrapperClass="w-full aspect-[4/3] rounded-2xl"
+            imgClass="object-contain p-8 rounded-2xl"
           />
+
           <div>
             <h2 className="text-3xl font-semibold text-[#2527A9] mb-4">
-              {t("projects.challenges") || (isArabic ? "التحديات" : "Challenges")}
+              {t("projects.challenges")}
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              {project.challenges}
-            </p>
+            <p className="text-lg text-gray-700">{project.challenges}</p>
           </div>
-        </motion.div>
+        </div>
 
-        {/* Results Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className="text-center bg-[#2527A9] text-white rounded-2xl p-12 shadow-lg"
-        >
+        {/* Results */}
+        <div className="text-center bg-[#2527A9] text-white rounded-2xl p-12">
           <h2 className="text-3xl font-semibold mb-6">
-            {t("projects.results") || (isArabic ? "النتائج" : "Results")}
+            {t("projects.results")}
           </h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto opacity-90">
+          <p className="text-lg max-w-3xl mx-auto opacity-90">
             {project.results}
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
