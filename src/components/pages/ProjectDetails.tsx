@@ -81,7 +81,7 @@ export default function ProjectDetails() {
       image:
         "https://6931a2ad06de332fac041a47.imgix.net/1-villa_300_riyadh_paramo_arquitectos.jpg",
       status: t("projects.completed"),
-      year: "2024",
+      year: "2025",
       overview: t("projects.luxury.overview"),
       scope: [
         t("projects.luxury.scope.architecture"),
@@ -136,7 +136,7 @@ export default function ProjectDetails() {
       category: t("projects.categoryElectromechanical"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/benzaghr.jpg",
       status: t("projects.completed"),
-      year: "2024",
+      year: "2025",
       overview: t("projects.benzaghr.overview"),
       scope: [
         t("projects.benzaghr.scope.PowerDistribution"),
@@ -153,7 +153,7 @@ export default function ProjectDetails() {
       category: t("projects.categoryElectromechanical"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/ababitin.jpg",
       status: t("projects.completed"),
-      year: "2024",
+      year: "2023",
       overview: t("projects.ababitin.overview"),
       scope: [
         t("projects.ababitin.scope.CivilWorks"),
@@ -172,7 +172,7 @@ export default function ProjectDetails() {
       category: t("projects.categoryElectromechanical"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/shiblan.jpg",
       status: t("projects.inProgress"),
-      year: "2025",
+      year: "2021",
       overview: t("projects.shiblan.overview"),
       scope: [
         t("projects.shiblan.scope.mep"),
@@ -190,7 +190,7 @@ export default function ProjectDetails() {
       category: t("projects.categoryFinishing"),
       image: "https://6931a2ad06de332fac041a47.imgix.net/hayat-finishes.jpg",
       status: t("projects.completed"),
-      year: "2024",
+      year: "2017",
       overview: t("projects.hayatFinishes.overview"),
       scope: [
         t("projects.hayatFinishes.scope.PlasterWorks"),
@@ -224,9 +224,9 @@ export default function ProjectDetails() {
       id: 9,
       title: t("projects.DhahranTechnoValley.title"),
       category: t("projects.categoryElectroFinish"),
-      image: "https://images.squarespace-cdn.com/content/68b42a6652beeb56115c1967/1756637809063-3TK6P9SIR1Z4908ZN1ZL/Asset+1.png?content-type=image%2Fpng",
+      image: "https://6931a2ad06de332fac041a47.imgix.net/DHAHRAN%20TECHNO%20VALLEY.png",
       status: t("projects.completed"),
-      year: "2024",
+      year: "2017",
       overview: t("projects.DhahranTechnoValley.overview"),
       scope: [
         t("projects.DhahranTechnoValley.scope.StairHandrails"),
@@ -243,7 +243,7 @@ export default function ProjectDetails() {
       category: t("projects.categoryElectroFinish"),
       image: "https://cdn.brandfolder.io/3I2CY2XL/as/vkc5w586w5gtr898396p3w/halliburton-logo.svg",
       status: t("projects.completed"),
-      year: "2024",
+      year: "2013",
       overview: t("projects.Halliburton.overview"),
       scope: [
         t("projects.Halliburton.scope.SlidingGates"),
@@ -258,9 +258,9 @@ export default function ProjectDetails() {
       id: 11,
       title: t("projects.Pepsico.title"),
       category: t("projects.categoryElectroFinish"),
-      image: "https://digitalassets.pepsico.com/transform/fe5c5aad-b8cd-4dd5-a1b2-d79302ff1f1c/PepsiCo-Logo-header?w=2048&q=75 1x, https://digitalassets.pepsico.com/transform/fe5c5aad-b8cd-4dd5-a1b2-d79302ff1f1c/PepsiCo-Logo-header?w=3840&q=75 2x",
+      image: "https://6931a2ad06de332fac041a47.imgix.net/pepsicologo.jpg",
       status: t("projects.completed"),
-      year: "2024",
+      year: "2014",
       overview: t("projects.Pepsico.overview"),
       scope: [
         t("projects.Pepsico.scope.Doors"),

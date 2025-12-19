@@ -24,7 +24,6 @@ export function Footer() {
             </p>
             <div className={`space-y-2 text-sm text-gray-400 ${isRTL ? 'text-right' : 'text-left'}`}>
               <p>{t('footer.licensed')}</p>
-              <p>CR Number: +966 54 444 8800</p>
               <p>www.swiftbuild-sa.com</p>
             </div>
           </div>

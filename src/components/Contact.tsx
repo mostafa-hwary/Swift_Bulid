@@ -234,9 +234,6 @@ export function Contact() {
                     <p className="text-muted-foreground">
                       info@swiftbuild-sa.com <br />
                       sales@swiftbuild-sa.com <br />
-                      abdullah@swiftbuild-sa.com <br />
-                      mohammed@swiftbuild-sa.com <br />
-                      amr@swiftbuild-sa.com <br />
                     </p>
                   </div>
                 </div>

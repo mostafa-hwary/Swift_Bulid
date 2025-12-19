@@ -23,7 +23,7 @@ const translations = {
     // Hero
     'hero.title': 'Swift Build Contracting,',
     'hero.titleHighlight': 'Integrated Quality Delivery',
-    'hero.subtitle': 'Founded in 2017, Swift Build specializes in construction, electrical, mechanical, and fire systems with qualified teams and modern techniques under unified management to ensure quality and speed.',
+    'hero.subtitle': 'Founded in 2013, Swift Build specializes in construction, electrical, mechanical, and fire systems with qualified teams and modern techniques under unified management to ensure quality and speed.',
     'hero.startProject': 'Start Your Project',
     'hero.viewWork': 'View Our Work',
     'hero.experience': 'Specialized engineering and execution experience',
@@ -52,7 +52,7 @@ const translations = {
 
     'about.history.heading':'COMPANY HISTORY ',
     'about.history.summary':"Swift Build Contracting boasts a highly skilled team of management experts dedicated to meeting the growing demand for advisory services and urban market development by integrating global insights with local expertise. Our experienced team continuously evolves to serve our clients effectively, achieving notable distinction in the construction sector through sound concepts and practices. By successfully completing various construction projects, Swift Build has qualified to be among the leading contractors in the Kingdom. Our management and engineering staff possess a thorough understanding of market regulations and practical, academic, and field experience. Construction and infrastructure projects remain a top priority for Swift Build, supported by our commitment and capability to meet market needs and customer expectations regarding quality and standards. The mission of Swift Build's construction sector has been pivotal in driving urban renewal,contributing to the Kingdom's economic growth, and establishing a new era of modern urban development. We undertake large and medium-sized construction development projects across the Middle East and Saudi markets, providing integrated urban services with professionalism and adherence to international quality standards.",
-    "about.history.highlight1": "Established in 2017 with a strong focus on construction and electromechanical works.",
+    "about.history.highlight1": "Established in 2013 with a strong focus on construction and electromechanical works.",
     "about.history.highlight2": "Successfully delivered multiple projects across Saudi Arabia and the Middle East.",
     "about.history.highlight3": "Recognized as one of the leading contractors through quality-driven execution.",
    
@@ -379,7 +379,7 @@ const translations = {
     'contact.hoursDetail': 'Sunday - Thursday: 8:00 AM - 6:00 PM\nFriday - Saturday: Closed\nEmergency: 24/7 Available',
     'contact.emergency': 'Need an Emergency Service?',
     'contact.emergencyDesc': 'We provide 24/7 emergency construction and repair services for urgent situations.',
-    'contact.emergencyButton': 'Emergency Hotline: +966 54 444 8800',
+    'contact.emergencyButton': 'Emergency Hotline: info@swiftbuild-sa.com',
     
     // Footer
     'footer.description': 'Swift Build has been delivering exceptional construction services across Saudi Arabia for over 15 years. We specialize in residential, commercial, and industrial construction projects.',
@@ -403,7 +403,7 @@ const translations = {
     // Hero
     'hero.title': 'سويفت بيلد للمقاولات،',
     'hero.titleHighlight': 'جودة بتنفيذ متكامل',
-    'hero.subtitle': 'تأسست سويفت بيلد عام 2017 متخصصة في الإنشاءات والأعمال الكهربائية والميكانيكية وأنظمة الحريق، مع فرق مؤهلة وتقنيات حديثة تحت إدارة موحدة لضمان الجودة وسرعة الإنجاز.',
+    'hero.subtitle': 'تأسست سويفت بيلد عام 2013 متخصصة في الإنشاءات والأعمال الكهربائية والميكانيكية وأنظمة الحريق، مع فرق مؤهلة وتقنيات حديثة تحت إدارة موحدة لضمان الجودة وسرعة الإنجاز.',
     'hero.startProject': 'ابدأ مشروعك',
     'hero.viewWork': 'اطلع على أعمالنا',
     'hero.experience': 'أكثر من 15 سنة خبرة',
@@ -413,7 +413,7 @@ const translations = {
     // About
     'about.badge': 'حول سويفت بيلد',
     'about.title': 'سويفت بيلد للمقاولات العامة',
-    'about.subtitle': 'تأسست شركة سويفت بيلد عام 2017 لتكون متخصصة في تنفيذ أعمال الإنشاءات والأعمال الكهربائية والميكانيكية للمباني السكنية وغير السكنية. تواكب الشركة رؤية المملكة 2030، وتعتمد على فرق فنية وهندسية مؤهلة وأحدث التقنيات والمنهجيات التنفيذية. توفر خدمات متكاملة تغطي الهيكل الخرساني، الميكانيكية، الكهربائية، وأنظمة الحريق والسلامة تحت إدارة موحدة تضمن الجودة وسرعة الإنجاز.',
+    'about.subtitle': 'تأسست شركة سويفت بيلد عام 2013 لتكون متخصصة في تنفيذ أعمال الإنشاءات والأعمال الكهربائية والميكانيكية للمباني السكنية وغير السكنية. تواكب الشركة رؤية المملكة 2030، وتعتمد على فرق فنية وهندسية مؤهلة وأحدث التقنيات والمنهجيات التنفيذية. توفر خدمات متكاملة تغطي الهيكل الخرساني، الميكانيكية، الكهربائية، وأنظمة الحريق والسلامة تحت إدارة موحدة تضمن الجودة وسرعة الإنجاز.',
     'about.heading': 'فريقنا وإدارتنا',
     'about.description1': 'إدارة تنفيذية تضع الاستراتيجيات وتشرف على الأداء العام؛ إدارة فنية تشمل الإنشاءات والكهرباء والميكانيكا وأنظمة الحريق؛ إدارة تشغيلية تشمل الموارد البشرية والمالية والمشتريات؛ إضافة إلى فرق هندسية وميدانية من مهندسين وفنيين متخصصين.',
     'about.description2': 'ما يميز الفريق: تنسيق داخلي عالي، خبرات متخصصة، التزام بالجودة والمواعيد. نؤمن أن التميز لا يأتي من الخدمة فقط بل من كيفية تقديمها عبر حلول مصممة حسب الحاجة وتقنيات حديثة ودعم فني مستمر واستدامة ومسؤولية وأسعار تنافسية.',
@@ -432,7 +432,7 @@ const translations = {
     
     "about.history.heading": "نبذة عن تاريخ الشركة",
     "about.history.summary": "تفخر شركة سويفت بيلد للمقاولات بامتلاك فريق إداري وهندسي عالي الكفاءة، يعمل على تلبية الطلب المتزايد على الخدمات الاستشارية وتطوير الأسواق العمرانية من خلال الدمج بين الخبرات العالمية والمعرفة المحلية. يواصل فريق العمل تطوير خبراته بشكل مستمر لخدمة عملائنا بكفاءة، مما مكّن الشركة من تحقيق مكانة متميزة في قطاع الإنشاءات عبر تطبيق مفاهيم وممارسات هندسية مدروسة. ومن خلال تنفيذ العديد من المشاريع الإنشائية بنجاح، استطاعت سويفت بيلد أن تكون ضمن نخبة شركات المقاولات في المملكة. يتمتع فريق الإدارة والهندسة بفهم عميق للأنظمة واللوائح، إضافة إلى خبرات عملية وأكاديمية وميدانية واسعة. وتُعد مشاريع الإنشاءات والبنية التحتية من أولويات الشركة، مدعومة بالقدرة والالتزام بتلبية متطلبات السوق وتوقعات العملاء من حيث الجودة والمعايير. وقد كان لدور قطاع الإنشاءات في سويفت بيلد أثر محوري في دعم التجديد العمراني، والمساهمة في النمو الاقتصادي للمملكة، وترسيخ مرحلة جديدة من التطوير الحضري الحديث. كما تنفذ الشركة مشاريع تطوير إنشائي متوسطة وكبيرة الحجم في أسواق المملكة والشرق الأوسط، مقدمة خدمات عمرانية متكاملة باحترافية ووفق أعلى معايير الجودة العالمية.",
-    "about.history.highlight1": "تأسست الشركة عام 2017 مع تركيز قوي على أعمال الإنشاءات والإلكتروميكانيك.",
+    "about.history.highlight1": "تأسست الشركة عام 2013 مع تركيز قوي على أعمال الإنشاءات والإلكتروميكانيك.",
     "about.history.highlight2": "تنفيذ العديد من المشاريع الناجحة في المملكة العربية السعودية وأسواق الشرق الأوسط.",
     "about.history.highlight3": "اكتساب مكانة متقدمة ضمن شركات المقاولات الرائدة بفضل جودة التنفيذ.",
     
@@ -748,7 +748,7 @@ const translations = {
     'contact.hoursDetail': 'الأحد - الخميس: 8:00 ص - 6:00 م\nالجمعة - السبت: مغلق\nالطوارئ: متاح 24/7',
     'contact.emergency': 'تحتاج خدمة طوارئ؟',
     'contact.emergencyDesc': 'نوفر خدمات البناء والإصلاح الطارئة على مدار 24/7 للحالات العاجلة.',
-    'contact.emergencyButton': 'خط الطوارئ: +966 54 444 8800',
+    'contact.emergencyButton': 'خط الطوارئ: info@swiftbuild-sa.com',
     
     // Footer
     'footer.description': 'سويفت بيلد تقدم خدمات البناء الاستثنائية في جميع أنحاء المملكة العربية السعودية لأكثر من 15 عامًا. نحن متخصصون في المشاريع السكنية والتجارية والصناعية.',
